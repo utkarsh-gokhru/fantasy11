@@ -19,7 +19,7 @@ function App() {
           <Route path = "/" element = {<Home />}/>
           <Route path = "/auth" element ={<Auth />}/>
           <Route path = "/rules" element = {<CreateRecepie />}/>
-          <Route path = "/savedrecepie" element ={<SaveRecepie />}/>
+          <Route path = "/Winners" element ={<SaveRecepie />}/>
         </Routes>
       </Router>
     </div>

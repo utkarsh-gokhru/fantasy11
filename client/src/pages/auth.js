@@ -1,10 +1,12 @@
 import React, { useState } from "react";
 import axios from "axios";
+import "./style.css";
 
 export const Auth = () => {
 
     return (
     <div className="auth">
+    <img src="https://english.mathrubhumi.com/image/contentid/policy:1.8925726:1695378675/iccnew.jpg?$p=19789fb&q=0.8" auth ="Wc"></img>
         <Login />
         < Register />
     </div>);
