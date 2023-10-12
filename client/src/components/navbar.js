@@ -5,7 +5,7 @@ export const  Navbar = () => {
     return(
     <div className="navbar">
         <Link to = "/">Home </Link>
-        <Link to = "createrecepie">CreateRecepie </Link>
+        <Link to = "rules">Rules </Link>
         <Link to = "savedrecipe">SaveRecepie </Link>
         <Link to = "auth">Login/Register </Link>
 

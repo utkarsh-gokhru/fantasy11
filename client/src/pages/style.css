@@ -1,0 +1,14 @@
+.rule-page {
+    background-color: aliceblue;
+    display: flex;
+    align-items: center;
+    height: 100vh;
+}
+ 
+.bat{
+    border: 1px solid black;
+}
+
+.ball{
+    border: 1px solid black;
+}
