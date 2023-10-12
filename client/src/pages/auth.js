@@ -6,9 +6,9 @@ export const Auth = () => {
 
     return (
     <div className="auth">
-    <img src="https://english.mathrubhumi.com/image/contentid/policy:1.8925726:1695378675/iccnew.jpg?$p=19789fb&q=0.8" auth ="Wc"></img>
+    
         <Login />
-        < Register />
+        <Register/>
     </div>);
 }
 
@@ -16,6 +16,7 @@ const Login =() => {
 const[username,setUsername]=useState("") 
 const[password,setPassword]=useState("")   
     return <Form 
+    
     username={username} 
     setUsername={setUsername} 
     password={password} 
@@ -53,6 +54,7 @@ const [password,setPassword] = useState("")
 
 const Form =({username, setUsername, password, setPassword,label,onSubmit}) =>{
     return <div className="auth-container">
+        
         <form onSubmit ={onSubmit}>
             <h2>{label}</h2>
             <div className="form-group">

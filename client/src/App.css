@@ -17,7 +17,13 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
+  width: 100%;
   background-color: #f2f2f2;
+  background-image: url("https://img.republicworld.com/republic-prod/stories/promolarge/xhdpi/tqnbkejljt8vmkq0_1669967903.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;;
+
 }
 
 .auth-container {
@@ -26,7 +32,10 @@ body {
   justify-content: center;
   align-items: center;
   padding: 20px;
-  background-color: white;
+  background-color: rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(30px);
+  color: #f2f2f2;
+  border-radius: 20px;
   border-radius: 5px;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
   margin: 20px;

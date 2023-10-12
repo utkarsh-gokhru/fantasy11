@@ -4,8 +4,12 @@ import styles from './Home.module.css';
 function MatchCard(props) {
   const { team1Name, team2Name, city, status } = props;
 
+const handleClick = () => {
+  window.location.href = "/contest"
+}
+
   return (
-    <div className={styles.card}>
+    <div onClick={handleClick} className={styles.card}>
       <div className={styles["team-names"]}>
         <span className={styles["team-1"]}>{team1Name}</span>
         <span className={styles["team-2"]}>{team2Name}</span>

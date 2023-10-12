@@ -49,3 +49,77 @@
     background-color: blueviolet
     ;
 }
+
+
+.dream11-winner-container {
+    display: flex;
+    align-items: center;
+    border: 2px solid #ccc;
+    padding: 20px;
+    border-radius: 10px; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    gap: 1rem;
+    position: absolute ;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 75%;
+  }
+  
+  .round-image {
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 20px; 
+    
+  }
+  
+  .round-image img {
+    width: 100px;
+  }
+  
+  .winnings-info {
+    
+    max-width: 500px; 
+  }
+  
+  .winnings-info h3 {
+    
+    font-size: 24px;
+    margin: 0 0 5px;
+  }
+  
+  .winnings-info h4 {
+    
+    font-size: 18px;
+    margin: 15px 0 5px;
+  }
+  
+  .winnings-info p {
+   
+    font-size: 16px;
+    margin: 0 0 10px;
+  }
+  
+  .bl{
+    border: 2px solid black;
+    padding: 10px;
+    border-radius: 10px; 
+    background-color: rgb(19, 80, 192);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: bold;
+  }
+
+
+
+  .champ {
+    display: flex;
+    align-items: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+    padding: 10px;
+
+  }
+  
