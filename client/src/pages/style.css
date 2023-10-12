@@ -6,9 +6,46 @@
 }
  
 .bat{
+    text-align: left;
     border: 1px solid black;
 }
 
 .ball{
     border: 1px solid black;
+}
+
+.field{
+    border: 1px solid black;
+}
+
+.vk{
+    height: 300px;
+    width: 400px;
+}
+
+.ms{
+    height: 300px;
+    width: 400px;
+}
+
+.jr{
+    height: 300px;
+    width: 400px;
+}
+
+
+.row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+   
+}
+
+.box{
+    height: 20px;
+    width: 20px;
+    border: 1px solid black;
+    padding: 7px;
+    background-color: blueviolet
+    ;
 }

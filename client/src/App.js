@@ -21,6 +21,7 @@ function App() {
           <Route path = "/rules" element = {<CreateRecepie />}/>
           <Route path = "/savedrecepie" element ={<SaveRecepie />}/>
           <Route path=  "/contest" element ={<ContestPage />}/>
+          <Route path = "/Winners" element ={<SaveRecepie />}/>
         </Routes>
       </Router>
     </div>
