@@ -1,0 +1,140 @@
+{
+  "player": [
+    {
+      "name": "BATTERS",
+      "isHeader": true
+    },
+    {
+      "id": "12201",
+      "name": "Harry Brook",
+      "role": "Batter",
+      "imageId": 244815,
+      "battingStyle": "Right-hand bat",
+      "bowlingStyle": "Right-arm medium"
+    },
+    {
+      "id": "10045",
+      "name": "Liam Livingstone",
+      "role": "Batter",
+      "imageId": 244797,
+      "battingStyle": "Right-hand bat",
+      "bowlingStyle": "Right-arm legbreak"
+    },
+    {
+      "id": "6660",
+      "name": "Dawid Malan",
+      "role": "Batter",
+      "imageId": 244793,
+      "battingStyle": "Left-hand bat",
+      "bowlingStyle": "Right-arm legbreak"
+    },
+    {
+      "id": "8019",
+      "name": "Joe Root",
+      "role": "Batter",
+      "imageId": 170942,
+      "battingStyle": "Right-hand bat",
+      "bowlingStyle": "Right-arm offbreak"
+    },
+    {
+      "name": "ALL ROUNDERS",
+      "isHeader": true
+    },
+    {
+      "id": "6692",
+      "name": "Moeen Ali",
+      "role": "Batting Allrounder",
+      "imageId": 244796,
+      "battingStyle": "Left-hand bat",
+      "bowlingStyle": "Right-arm offbreak"
+    },
+    {
+      "id": "6557",
+      "name": "Ben Stokes",
+      "role": "Batting Allrounder",
+      "imageId": 244791,
+      "battingStyle": "Left-hand bat",
+      "bowlingStyle": "Right-arm fast-medium"
+    },
+    {
+      "id": "10420",
+      "name": "Sam Curran",
+      "role": "Bowling Allrounder",
+      "imageId": 244812,
+      "battingStyle": "Left-hand bat",
+      "bowlingStyle": "Left-arm fast-medium"
+    },
+    {
+      "id": "6592",
+      "name": "David Willey",
+      "role": "Bowling Allrounder",
+      "imageId": 244795,
+      "battingStyle": "Left-hand bat",
+      "bowlingStyle": "Left-arm fast-medium"
+    },
+    {
+      "id": "6670",
+      "name": "Chris Woakes",
+      "role": "Bowling Allrounder",
+      "imageId": 244787,
+      "battingStyle": "Right-hand bat",
+      "bowlingStyle": "Right-arm fast-medium"
+    },
+    {
+      "name": "WICKET KEEPERS",
+      "isHeader": true
+    },
+    {
+      "id": "2258",
+      "name": "Jos Buttler",
+      "captain": true,
+      "role": "WK-Batter",
+      "imageId": 244800,
+      "battingStyle": "Right-hand bat"
+    },
+    {
+      "id": "6507",
+      "name": "Jonny Bairstow",
+      "role": "WK-Batter",
+      "imageId": 170976,
+      "battingStyle": "Right-hand bat",
+      "bowlingStyle": "Right-arm medium"
+    },
+    {
+      "name": "BOWLERS",
+      "isHeader": true
+    },
+    {
+      "id": "13681",
+      "name": "Gus Atkinson",
+      "role": "Bowler",
+      "imageId": 152735,
+      "battingStyle": "Right-hand bat",
+      "bowlingStyle": "Right-arm medium"
+    },
+    {
+      "id": "1742",
+      "name": "Adil Rashid",
+      "role": "Bowler",
+      "imageId": 244789,
+      "battingStyle": "Right-hand bat",
+      "bowlingStyle": "Right-arm legbreak"
+    },
+    {
+      "id": "8349",
+      "name": "Reece Topley",
+      "role": "Bowler",
+      "imageId": 244807,
+      "battingStyle": "Right-hand bat",
+      "bowlingStyle": "Left-arm fast-medium"
+    },
+    {
+      "id": "8383",
+      "name": "Mark Wood",
+      "role": "Bowler",
+      "imageId": 244802,
+      "battingStyle": "Right-hand bat",
+      "bowlingStyle": "Right-arm fast"
+    }
+  ]
+}

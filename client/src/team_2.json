@@ -1,0 +1,139 @@
+{
+  "player": [
+    {
+      "name": "BATTERS",
+      "isHeader": true
+    },
+    {
+      "id": "576",
+      "name": "Rohit Sharma",
+      "captain": true,
+      "role": "Batter",
+      "imageId": 332888,
+      "battingStyle": "Right-hand bat",
+      "bowlingStyle": "Right-arm offbreak"
+    },
+    {
+      "id": "11808",
+      "name": "Shubman Gill",
+      "role": "Batter",
+      "imageId": 332889,
+      "battingStyle": "Right-hand bat",
+      "bowlingStyle": "Right-arm offbreak"
+    },
+    {
+      "id": "1413",
+      "name": "Virat Kohli",
+      "role": "Batter",
+      "imageId": 332891,
+      "battingStyle": "Right-hand bat",
+      "bowlingStyle": "Right-arm medium"
+    },
+    {
+      "id": "9428",
+      "name": "Shreyas Iyer",
+      "role": "Batter",
+      "imageId": 171024,
+      "battingStyle": "Right-hand bat",
+      "bowlingStyle": "Right-arm legbreak"
+    },
+    {
+      "id": "7915",
+      "name": "Suryakumar Yadav",
+      "role": "Batter",
+      "imageId": 244979,
+      "battingStyle": "Right-hand bat",
+      "bowlingStyle": "Right-arm offbreak"
+    },
+    {
+      "name": "ALL ROUNDERS",
+      "isHeader": true
+    },
+    {
+      "id": "9647",
+      "name": "Hardik Pandya",
+      "role": "Batting Allrounder",
+      "imageId": 244973,
+      "battingStyle": "Right-hand bat",
+      "bowlingStyle": "Right-arm fast-medium"
+    },
+    {
+      "id": "587",
+      "name": "Ravindra Jadeja",
+      "role": "Bowling Allrounder",
+      "imageId": 332896,
+      "battingStyle": "Left-hand bat",
+      "bowlingStyle": "Left-arm orthodox"
+    },
+    {
+      "id": "1593",
+      "name": "Ravichandran Ashwin",
+      "role": "Bowling Allrounder",
+      "imageId": 332898,
+      "battingStyle": "Right-hand bat",
+      "bowlingStyle": "Right-arm offbreak"
+    },
+    {
+      "name": "WICKET KEEPERS",
+      "isHeader": true
+    },
+    {
+      "id": "8733",
+      "name": "KL Rahul",
+      "role": "WK-Batter",
+      "imageId": 244975,
+      "battingStyle": "Right-hand bat"
+    },
+    {
+      "id": "10276",
+      "name": "Ishan Kishan",
+      "role": "WK-Batter",
+      "imageId": 332895,
+      "battingStyle": "Left-hand bat"
+    },
+    {
+      "name": "BOWLERS",
+      "isHeader": true
+    },
+    {
+      "id": "8683",
+      "name": "Shardul Thakur",
+      "role": "Bowler",
+      "imageId": 332899,
+      "battingStyle": "Right-hand bat",
+      "bowlingStyle": "Right-arm fast-medium"
+    },
+    {
+      "id": "9311",
+      "name": "Jasprit Bumrah",
+      "role": "Bowler",
+      "imageId": 170685,
+      "battingStyle": "Right-hand bat",
+      "bowlingStyle": "Right-arm fast"
+    },
+    {
+      "id": "8292",
+      "name": "Kuldeep Yadav",
+      "role": "Bowler",
+      "imageId": 170683,
+      "battingStyle": "Left-hand bat",
+      "bowlingStyle": "Left-arm chinaman"
+    },
+    {
+      "id": "7909",
+      "name": "Mohammed Shami",
+      "role": "Bowler",
+      "imageId": 332900,
+      "battingStyle": "Right-hand bat",
+      "bowlingStyle": "Right-arm fast-medium"
+    },
+    {
+      "id": "10808",
+      "name": "Mohammed Siraj",
+      "role": "Bowler",
+      "imageId": 332902,
+      "battingStyle": "Right-hand bat",
+      "bowlingStyle": "Right-arm fast-medium"
+    }
+  ]
+}

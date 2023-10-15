@@ -1,0 +1,143 @@
+{
+  "player": [
+    {
+      "name": "BATTERS",
+      "isHeader": true
+    },
+    {
+      "id": "6326",
+      "name": "Kane Williamson",
+      "captain": true,
+      "role": "Batter",
+      "imageId": 244826,
+      "battingStyle": "Right-hand bat",
+      "bowlingStyle": "Right-arm offbreak"
+    },
+    {
+      "name": "ALL ROUNDERS",
+      "isHeader": true
+    },
+    {
+      "id": "9976",
+      "name": "Mark Chapman",
+      "role": "Batting Allrounder",
+      "imageId": 244825,
+      "battingStyle": "Left-hand bat",
+      "bowlingStyle": "Left-arm orthodox"
+    },
+    {
+      "id": "10713",
+      "name": "Daryl Mitchell",
+      "role": "Batting Allrounder",
+      "imageId": 244813,
+      "battingStyle": "Right-hand bat",
+      "bowlingStyle": "Right-arm medium"
+    },
+    {
+      "id": "8983",
+      "name": "James Neesham",
+      "role": "Batting Allrounder",
+      "imageId": 244821,
+      "battingStyle": "Left-hand bat",
+      "bowlingStyle": "Right-arm medium"
+    },
+    {
+      "id": "11177",
+      "name": "Rachin Ravindra",
+      "role": "Batting Allrounder",
+      "imageId": 154492,
+      "battingStyle": "Left-hand bat",
+      "bowlingStyle": "Left-arm orthodox"
+    },
+    {
+      "id": "8549",
+      "name": "Will Young",
+      "role": "Batting Allrounder",
+      "imageId": 154598,
+      "battingStyle": "Right-hand bat",
+      "bowlingStyle": "Right-arm offbreak"
+    },
+    {
+      "id": "10100",
+      "name": "Mitchell Santner",
+      "role": "Bowling Allrounder",
+      "imageId": 244828,
+      "battingStyle": "Left-hand bat",
+      "bowlingStyle": "Left-arm orthodox"
+    },
+    {
+      "name": "WICKET KEEPERS",
+      "isHeader": true
+    },
+    {
+      "id": "9838",
+      "name": "Devon Conway",
+      "role": "WK-Batter",
+      "keeper": true,
+      "imageId": 244818,
+      "battingStyle": "Left-hand bat",
+      "bowlingStyle": "Right-arm medium"
+    },
+    {
+      "id": "8216",
+      "name": "Tom Latham",
+      "role": "WK-Batter",
+      "keeper": true,
+      "imageId": 170743,
+      "battingStyle": "Left-hand bat",
+      "bowlingStyle": "Right-arm medium"
+    },
+    {
+      "id": "10693",
+      "name": "Glenn Phillips",
+      "role": "WK-Batter",
+      "imageId": 244817,
+      "battingStyle": "Right-hand bat",
+      "bowlingStyle": "Right-arm offbreak"
+    },
+    {
+      "name": "BOWLERS",
+      "isHeader": true
+    },
+    {
+      "id": "8117",
+      "name": "Trent Boult",
+      "role": "Bowler",
+      "imageId": 244829,
+      "battingStyle": "Right-hand bat",
+      "bowlingStyle": "Left-arm fast-medium"
+    },
+    {
+      "id": "10692",
+      "name": "Lockie Ferguson",
+      "role": "Bowler",
+      "imageId": 244820,
+      "battingStyle": "Right-hand bat",
+      "bowlingStyle": "Right-arm fast"
+    },
+    {
+      "id": "9067",
+      "name": "Matt Henry",
+      "role": "Bowler",
+      "imageId": 170751,
+      "battingStyle": "Right-hand bat",
+      "bowlingStyle": "Right-arm fast-medium"
+    },
+    {
+      "id": "8561",
+      "name": "Ish Sodhi",
+      "role": "Bowler",
+      "imageId": 244819,
+      "battingStyle": "Right-hand bat",
+      "bowlingStyle": "Right-arm legbreak"
+    },
+    {
+      "id": "1057",
+      "name": "Tim Southee",
+      "role": "Bowler",
+      "imageId": 244824,
+      "battingStyle": "Right-hand bat",
+      "bowlingStyle": "Right-arm fast-medium"
+    }
+  ]
+}
