@@ -1,0 +1,137 @@
+{
+  "player": [
+    {
+      "name": "BATTERS",
+      "isHeader": true
+    },
+    {
+      "id": "13682",
+      "name": "Pathum Nissanka",
+      "role": "Batter",
+      "imageId": 244673,
+      "battingStyle": "Right-hand bat"
+    },
+    {
+      "id": "7952",
+      "name": "Dimuth Karunaratne",
+      "role": "Batter",
+      "imageId": 170700,
+      "battingStyle": "Left-hand bat",
+      "bowlingStyle": "Right-arm medium"
+    },
+    {
+      "name": "ALL ROUNDERS",
+      "isHeader": true
+    },
+    {
+      "id": "8422",
+      "name": "Dasun Shanaka",
+      "captain": true,
+      "role": "Batting Allrounder",
+      "imageId": 244663,
+      "battingStyle": "Right-hand bat",
+      "bowlingStyle": "Right-arm medium"
+    },
+    {
+      "id": "10934",
+      "name": "Charith Asalanka",
+      "role": "Batting Allrounder",
+      "imageId": 244654,
+      "battingStyle": "Left-hand bat",
+      "bowlingStyle": "Right-arm offbreak"
+    },
+    {
+      "id": "7872",
+      "name": "Dhananjaya de Silva",
+      "role": "Batting Allrounder",
+      "imageId": 244845,
+      "battingStyle": "Right-hand bat",
+      "bowlingStyle": "Right-arm offbreak"
+    },
+    {
+      "name": "WICKET KEEPERS",
+      "isHeader": true
+    },
+    {
+      "id": "9494",
+      "name": "Kusal Mendis",
+      "role": "WK-Batter",
+      "imageId": 244672,
+      "battingStyle": "Right-hand bat"
+    },
+    {
+      "id": "8116",
+      "name": "Kusal Perera",
+      "role": "WK-Batter",
+      "imageId": 170718,
+      "battingStyle": "Left-hand bat"
+    },
+    {
+      "id": "9495",
+      "name": "Sadeera Samarawickrama",
+      "role": "WK-Batter",
+      "imageId": 151350,
+      "battingStyle": "Right-hand bat"
+    },
+    {
+      "name": "BOWLERS",
+      "isHeader": true
+    },
+    {
+      "id": "35640",
+      "name": "Dushan Hemantha",
+      "role": "Bowler",
+      "imageId": 174146,
+      "battingStyle": "Right-hand bat",
+      "bowlingStyle": "Right-arm legbreak"
+    },
+    {
+      "id": "18504",
+      "name": "Maheesh Theekshana",
+      "role": "Bowler",
+      "imageId": 244668,
+      "battingStyle": "Right-hand bat",
+      "bowlingStyle": "Right-arm offbreak"
+    },
+    {
+      "id": "14251",
+      "name": "Dunith Wellalage",
+      "role": "Bowler",
+      "imageId": 226300,
+      "battingStyle": "Left-hand bat",
+      "bowlingStyle": "Left-arm orthodox"
+    },
+    {
+      "id": "10472",
+      "name": "Kasun Rajitha",
+      "role": "Bowler",
+      "imageId": 154635,
+      "battingStyle": "Right-hand bat",
+      "bowlingStyle": "Right-arm fast-medium"
+    },
+    {
+      "id": "16458",
+      "name": "Matheesha Pathirana",
+      "role": "Bowler",
+      "imageId": 226299,
+      "battingStyle": "Right-hand bat",
+      "bowlingStyle": "Right-arm fast"
+    },
+    {
+      "id": "10928",
+      "name": "Lahiru Kumara",
+      "role": "Bowler",
+      "imageId": 244669,
+      "battingStyle": "Left-hand bat",
+      "bowlingStyle": "Right-arm fast-medium"
+    },
+    {
+      "id": "15067",
+      "name": "Dilshan Madushanka",
+      "role": "Bowler",
+      "imageId": 244666,
+      "battingStyle": "Right-hand bat",
+      "bowlingStyle": "Left-arm fast-medium"
+    }
+  ]
+}

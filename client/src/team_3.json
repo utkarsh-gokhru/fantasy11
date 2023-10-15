@@ -1,0 +1,140 @@
+{
+  "player": [
+    {
+      "name": "BATTERS",
+      "isHeader": true
+    },
+    {
+      "id": "8359",
+      "name": "Babar Azam",
+      "captain": true,
+      "role": "Batter",
+      "imageId": 244936,
+      "battingStyle": "Right-hand bat",
+      "bowlingStyle": "Right-arm offbreak"
+    },
+    {
+      "id": "12139",
+      "name": "Abdullah Shafique",
+      "role": "Batter",
+      "imageId": 174146,
+      "battingStyle": "Right-hand bat",
+      "bowlingStyle": "Right-arm offbreak"
+    },
+    {
+      "id": "10863",
+      "name": "Fakhar Zaman",
+      "role": "Batter",
+      "imageId": 244937,
+      "battingStyle": "Left-hand bat",
+      "bowlingStyle": "Left-arm orthodox"
+    },
+    {
+      "id": "8364",
+      "name": "Imam-ul-Haq",
+      "role": "Batter",
+      "imageId": 170765,
+      "battingStyle": "Left-hand bat"
+    },
+    {
+      "name": "ALL ROUNDERS",
+      "isHeader": true
+    },
+    {
+      "id": "10799",
+      "name": "Iftikhar Ahmed",
+      "role": "Batting Allrounder",
+      "imageId": 244946,
+      "battingStyle": "Right-hand bat",
+      "bowlingStyle": "Right-arm offbreak"
+    },
+    {
+      "id": "10101",
+      "name": "Agha Salman",
+      "role": "Batting Allrounder",
+      "imageId": 174146,
+      "battingStyle": "Right-hand bat",
+      "bowlingStyle": "Right-arm offbreak"
+    },
+    {
+      "id": "9812",
+      "name": "Saud Shakeel",
+      "role": "Batting Allrounder",
+      "imageId": 155516,
+      "battingStyle": "Left-hand bat",
+      "bowlingStyle": "Left-arm orthodox"
+    },
+    {
+      "id": "11186",
+      "name": "Shadab Khan",
+      "role": "Bowling Allrounder",
+      "imageId": 244959,
+      "battingStyle": "Right-hand bat",
+      "bowlingStyle": "Right-arm legbreak"
+    },
+    {
+      "id": "8367",
+      "name": "Mohammad Nawaz",
+      "role": "Bowling Allrounder",
+      "imageId": 244954,
+      "battingStyle": "Left-hand bat",
+      "bowlingStyle": "Left-arm orthodox"
+    },
+    {
+      "name": "WICKET KEEPERS",
+      "isHeader": true
+    },
+    {
+      "id": "9468",
+      "name": "Mohammad Rizwan",
+      "role": "WK-Batter",
+      "keeper": true,
+      "imageId": 244955,
+      "battingStyle": "Right-hand bat"
+    },
+    {
+      "name": "BOWLERS",
+      "isHeader": true
+    },
+    {
+      "id": "14561",
+      "name": "Haris Rauf",
+      "role": "Bowler",
+      "imageId": 244939,
+      "battingStyle": "Right-hand bat",
+      "bowlingStyle": "Right-arm fast"
+    },
+    {
+      "id": "11320",
+      "name": "Hasan Ali",
+      "role": "Bowler",
+      "imageId": 170804,
+      "battingStyle": "Right-hand bat",
+      "bowlingStyle": "Right-arm fast-medium"
+    },
+    {
+      "id": "15040",
+      "name": "Mohammad Wasim Jr",
+      "role": "Bowler",
+      "imageId": 244957,
+      "battingStyle": "Right-hand bat",
+      "bowlingStyle": "Right-arm fast-medium"
+    },
+    {
+      "id": "12160",
+      "name": "Shaheen Afridi",
+      "role": "Bowler",
+      "imageId": 244960,
+      "battingStyle": "Left-hand bat",
+      "bowlingStyle": "Left-arm fast-medium"
+    },
+    {
+      "id": "11318",
+      "name": "Usama Mir",
+      "role": "Bowler",
+      "imageId": 174146,
+      "battingStyle": "Right-hand bat",
+      "bowlingStyle": "Right-arm legbreak"
+    }
+  ]
+}

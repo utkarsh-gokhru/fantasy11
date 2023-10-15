@@ -1,0 +1,62 @@
+.player-card {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px;
+  width: 25vw;
+  background-color: #f7f7f7;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+.player-card h2 {
+  font-size: 18px;
+  margin: 0;
+}
+
+.team-page {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap; 
+}
+
+.team {
+  flex: 0 1 calc(50% - 20px); 
+  margin: 10px; 
+  padding: 10px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.player-card p {
+  font-size: 14px;
+  margin: 0;
+  margin-top: 5px;
+}
+
+/* Style for selected players */
+.selected {
+  background-color: #99cc99;
+}
+
+.create_btn {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+  width: 25%; 
+  border-radius: 4px;
+  margin-bottom: 20px;
+}
+
+.create_btn:hover {
+  background-color: #0056b3;
+  transform: translate(0, 2px);
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+}
