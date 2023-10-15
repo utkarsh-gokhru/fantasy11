@@ -74,7 +74,6 @@ function MatchCard(props) {
             setOvers2("0.0");
           }
         }
-        // navigate('/contest');
       });
     });
 
@@ -101,7 +100,6 @@ function MatchCard(props) {
   );
 }
 
-// The rest of your code remains the same
 function Home() {
   const [matches, setMatches] = useState([]);
 
