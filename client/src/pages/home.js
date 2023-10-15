@@ -95,7 +95,7 @@ function MatchCard(props) {
         <span className={styles["team-2"]}>{score2} ({overs2})</span>
       </div>
       <div className={styles["button-container"]}>
-    <button className={styles.button} onClick={() => navigate(`/contest?matchId=${matchId}&team1Id=${team1Id}&team2Id=${team2Id}&team1Name=${team1Name}&team2Name=${team2Name}`)} disabled={isMatchComplete || matchState==='live'}>Join contest</button>
+    <button className={styles.button} onClick={() => navigate(`/contest?matchId=${matchId}&team1Id=${team1Id}&team2Id=${team2Id}&team1Name=${team1Name}&team2Name=${team2Name}`)} disabled={isMatchComplete || matchState==='In Progress'}>Join contest</button>
   </div>
     </div>
   );
