@@ -9,6 +9,7 @@ import { CreateRecepie } from './pages/createrecepie';
 import { SaveRecepie } from './pages/saverecepie';
 import { Navbar } from './components/navbar';
 import ContestPage from './pages/contest';
+import TeamPage from './pages/team_page';
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
           <Route path = "/savedrecepie" element ={<SaveRecepie />}/>
           <Route path=  "/contest" element ={<ContestPage />}/>
           <Route path = "/Winners" element ={<SaveRecepie />}/>
+          <Route path = "/team_page" element ={<TeamPage />}/>
         </Routes>
       </Router>
     </div>
