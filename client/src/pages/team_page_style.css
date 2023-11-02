@@ -7,36 +7,44 @@
   background-color: #f7f7f7;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
   cursor: pointer;
+  transition: transform 0.2s; 
 }
 
 .player-card h2 {
   font-size: 18px;
   margin: 0;
+  font-weight: bold; 
 }
 
 .team-page {
   display: flex;
   justify-content: space-between;
-  flex-wrap: wrap; 
+  flex-wrap: wrap;
 }
 
 .team {
-  flex: 0 1 calc(50% - 20px); 
-  margin: 10px; 
+  flex: 0 1 calc(50% - 20px);
+  margin: 10px;
   padding: 10px;
   box-sizing: border-box;
   text-align: center;
+  
 }
+
+
 
 .player-card p {
   font-size: 14px;
   margin: 0;
   margin-top: 5px;
+  color: #555; 
 }
 
-/* Style for selected players */
+
 .selected {
-  background-color: #99cc99;
+  background-color: #99cc99; 
+  border: 1px solid #4CAF50; 
+  transform: scale(1.02); 
 }
 
 .create_btn {
@@ -46,9 +54,10 @@
   color: white;
   border: none;
   cursor: pointer;
-  width: 25%; 
+  width: 25%;
   border-radius: 4px;
   margin-bottom: 20px;
+  transition: background-color 0.2s, transform 0.2s; 
 }
 
 .create_btn:hover {
@@ -59,4 +68,45 @@
 .btn {
   display: flex;
   justify-content: center;
+}
+
+.captains-selection {
+  text-align: center;
+  margin-top: 10px;
+  background-color: #f0f0f0; 
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.captains label {
+  font-weight: bold;
+  font-size: 16px;
+  color: #333; 
+  margin-right: 10px;
+}
+
+select {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  background-color: #f7f7f7; 
+  color: #333; 
+  margin-right: 10px;
+  transition: border-color 0.2s;
+}
+
+select#viceCaptainSelect {
+  margin-top: 10px;
+}
+
+select:focus {
+  border-color: #007bff; 
+  outline: none;
+}
+
+.captains label:hover {
+  cursor: pointer;
+  color: #007bff; 
 }

@@ -50,7 +50,7 @@ function ContestPage() {
       <h1>Contests</h1>
       <div className="contest-list">
         {contests.map((contest) => (
-          <ContestCard key={contest.id} contest={contest} />
+          <ContestCard key={contest.id} contest={contest} contestId={contest.id} />
         ))}
       </div>
     </div>

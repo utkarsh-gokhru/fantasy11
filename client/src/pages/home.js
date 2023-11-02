@@ -1,27 +1,32 @@
 import React, { useState, useEffect } from 'react';
 import styles from './Home.module.css';
 import { useNavigate } from 'react-router-dom';
+import { useUserContext } from './user_context';
 
 function MatchCard(props) {
   const { team1Name, team2Name, city, matchId, status:initialStatus, team1Id, team2Id } = props;
   const navigate = useNavigate();
 
+  const contestData = {
+    matchId,
+    team1Id,
+    team2Id,
+    team1Name,
+    team2Name,
+  };
+
   const [score1, setScore1] = useState();
   const [overs1, setOvers1] = useState();
   const [score2, setScore2] = useState();
   const [overs2, setOvers2] = useState();
-  const [status, setStatus] = useState(initialStatus);
+  const [status, setStatus] = useState("Click the match card to see the status");
   const [isMatchComplete, setIsMatchComplete] = useState(true);
   const [matchState, setMatchState] = useState('');
-
-  const goTocontests = () =>{
-    navigate('/contest');
-  }
 
   const getScAndNavigate = (matchId,team1Id,team2Id,team1Name,team2Name) => {
     const http = require('https');
 
-    const options = {
+    const options = { 
       method: 'GET',
       hostname: 'cricbuzz-cricket.p.rapidapi.com',
       port: null,
@@ -94,7 +99,7 @@ function MatchCard(props) {
         <span className={styles["team-2"]}>{score2} ({overs2})</span>
       </div>
       <div className={styles["button-container"]}>
-    <button className={styles.button} onClick={() => navigate(`/contest?matchId=${matchId}&team1Id=${team1Id}&team2Id=${team2Id}&team1Name=${team1Name}&team2Name=${team2Name}`)} disabled={isMatchComplete || matchState==='In Progress'}>Join contest</button>
+    <button className={styles.button} onClick={() => navigate(`/contest`,{state:{contestData}})} disabled={isMatchComplete || matchState==='In Progress'}>Join contest</button>
   </div>
     </div>
   );
@@ -102,6 +107,8 @@ function MatchCard(props) {
 
 function Home() {
   const [matches, setMatches] = useState([]);
+  // const { username } = useUserContext();
+  const username = localStorage.getItem("username");
 
   useEffect(() => {
     const jsonDataURL =
@@ -538,8 +545,9 @@ function Home() {
 
   return (
     <div>
+      <h2>Welcome, {username}</h2>
       <div>
-        <h3>Click on the match to get match details</h3>
+        <center><h2>Matches</h2></center>
       </div>
       <div className={styles["match-cards-container"]}>
         <div id="match-cards">

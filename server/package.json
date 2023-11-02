@@ -2,9 +2,9 @@
   "name": "server",
   "version": "1.0.0",
   "main": "index.js",
-  "type": "module",                     
+  "type": "module",
   "license": "MIT",
-  "scripts" : {
+  "scripts": {
     "start": "nodemon src/index.js"
   },
   "dependencies": {
