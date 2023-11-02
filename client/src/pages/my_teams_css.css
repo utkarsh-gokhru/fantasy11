@@ -1,0 +1,97 @@
+/* my_teams_css.css */
+
+/* Container */
+.team-title {
+font-size: 28px;
+color: #333;
+text-align: center;
+margin-top: 20px;
+}
+
+/* Team Info */
+.team-info {
+font-size: 18px;
+color: #555;
+margin: 20px 0;
+text-align: center;
+}
+
+/* Captain and Vice Captain */
+.captain-info,
+.vice-captain-info {
+font-size: 16px;
+color: #007bff;
+margin: 12px 0;
+text-align: center;
+}
+
+/* Players List */
+.players-title {
+font-size: 20px;
+font-weight: bold;
+margin: 24px 0;
+text-align: center;
+}
+
+.player-list {
+list-style-type: none;
+margin: 0;
+padding: 0;
+text-align: center;
+}
+
+.player-info {
+font-size: 16px;
+color: #666;
+margin-bottom: 8px;
+}
+
+/* Back Button */
+.back-button {
+text-align: center;
+margin-top: 20px;
+}
+
+.back-button a {
+text-decoration: none;
+color: #007bff;
+font-weight: bold;
+font-size: 16px;
+transition: color 0.3s;
+}
+
+.back-button a:hover {
+color: #0056b3;
+}
+
+/* Container Background */
+.my-team-container {
+background-color: #f9f9f9;
+padding: 20px;
+border-radius: 10px;
+box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+width: 80%;
+margin: 0 auto;
+text-align: center;
+}
+
+/* Team Info Container */
+.team-info-container {
+background-color: #fff;
+padding: 20px;
+border-radius: 8px;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Highlighted Labels */
+.info-label {
+font-weight: bold;
+color: #333;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+.my-team-container {
+    width: 90%;
+}
+}
