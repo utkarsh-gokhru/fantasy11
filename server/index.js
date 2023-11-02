@@ -1,8 +1,8 @@
 import express from "express";
 import cors from 'cors' ;
 import mongoose from 'mongoose' ;
-import { userRouter } from "../routes/users.js";
-import { team_router } from "../routes/team.js";
+import { userRouter } from "./routes/users.js";
+import { team_router } from "./routes/team.js";
 
 const app = express();
 
@@ -16,7 +16,7 @@ mongoose.connect("mongodb://127.0.0.1:27017/Pinnacle_picks",{
 }).then(() => { 
     console.log(`DB connected`); 
 }).catch((err) =>  
-console.log(`DB connection failed ${err}`)); 
+console.log(`DB connection failed${err}`));
 
 app.use("/auth", userRouter);
 app.use("/team_page",team_router);
