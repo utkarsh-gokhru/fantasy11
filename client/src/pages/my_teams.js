@@ -62,7 +62,6 @@ const MyTeam = () => {
         setIsMatchComplete(jsondata.isMatchComplete);
 
         const match_header = jsondata.matchHeader;
-        const matchStatus = match_header.status;
         const matchState = match_header.state;
         setMatchState(matchState);
       });

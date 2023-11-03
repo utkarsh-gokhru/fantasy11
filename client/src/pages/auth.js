@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import { useUserContext } from "./user_context";
 import axios from "axios";
 import "../css/style.css";
 
@@ -17,11 +16,7 @@ const Login = () => {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
   const [error, setError] = useState("");
-  // const [loggedIn, setLoggedIn] = useState(false);
-  // const [ showNavbar, setShowNavbar] = useState(false);
-  // const { setUsername : setContextUsername } = useUserContext();
   const navigate = useNavigate();
-  const { setUsername: setContextUsername } = useUserContext();
 
   const handleLogin = async (event) => {
     event.preventDefault();
@@ -32,9 +27,6 @@ const Login = () => {
       });
 
       if (response.data.token) {
-        // setContextUsername(username);
-        // setLoggedIn(true);
-        // setShowNavbar(true);
         localStorage.setItem("username",username);
         localStorage.setItem("loggedIn","true")
         navigate("/home");
@@ -62,7 +54,6 @@ const Register = () => {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
   const [error, setError] = useState(null);
-  const navigate = useNavigate();
 
   const onSubmit = async (event) => {
     event.preventDefault();

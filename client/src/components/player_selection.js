@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import '../css/player_selec_style.css';
-import { useLocation, useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
 
 const PlayerCard = ({ player, isSelected, onSelect, onDeselect }) => {
@@ -29,7 +29,6 @@ const PlayerCard = ({ player, isSelected, onSelect, onDeselect }) => {
 };
 
 const PlayerSelection = ({matchId,username,contestId,team1Name,team2Name, isEditing, setIsEditing}) => {
-    const location = useLocation();
     const navigate = useNavigate();
 
     const match_data = require('../matches_data.json');
