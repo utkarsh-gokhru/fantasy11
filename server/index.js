@@ -3,6 +3,7 @@ import cors from 'cors' ;
 import mongoose from 'mongoose' ;
 import { userRouter } from "./routes/users.js";
 import { team_router } from "./routes/team.js";
+import { LeaderboardRouter } from "./routes/leaderboard.js";
 
 const app = express();
 
@@ -20,5 +21,6 @@ console.log(`DB connection failed${err}`));
 
 app.use("/auth", userRouter);
 app.use("/team_page",team_router);
+app.use("/my_teams",LeaderboardRouter);
 
 app.listen(3001, () => console.log("SERVER STARTED!"));

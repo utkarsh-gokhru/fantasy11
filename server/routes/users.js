@@ -5,14 +5,12 @@ import { UserModel } from "../models/Users.js";
 
 const router = express.Router();
 
-// Store your JWT secret in an environment variable
 const jwtSecret = process.env.JWT_SECRET || "your-secret-key";
 
 router.post("/register", async (req, res) => {
   try {
     const { username, password } = req.body;
 
-    // Validate username and password
     if (!username || !password) {
       return res.status(400).json({ message: "Invalid input data" });
     }
@@ -38,7 +36,6 @@ router.post("/login", async (req, res) => {
   try {
     const { username, password } = req.body;
 
-    // Validate username and password
     if (!username || !password) {
       return res.status(400).json({ message: "Invalid input data" });
     }

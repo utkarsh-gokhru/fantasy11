@@ -1,0 +1,122 @@
+.player-card {
+border: 1px solid #ccc;
+border-radius: 5px;
+padding: 10px;
+margin: 10px;
+width: 25vw;
+background-color: #f7f7f7;
+box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+cursor: pointer;
+transition: transform 0.2s; 
+}
+
+.player-card h2 {
+font-size: 18px;
+margin: 0;
+font-weight: bold; 
+}
+
+.team-page {
+display: flex;
+justify-content: space-between;
+flex-wrap: wrap;
+}
+
+.team {
+flex: 0 1 calc(50% - 20px);
+margin: 10px;
+padding: 10px;
+box-sizing: border-box;
+text-align: center;
+
+}
+
+.player-card p {
+font-size: 14px;
+margin: 0;
+margin-top: 5px;
+color: #555; 
+}
+
+
+.selected {
+background-color: #99cc99; 
+border: 1px solid #4CAF50; 
+transform: scale(1.02); 
+}
+
+.captains{
+    width: 55vw;
+}
+
+.btn {
+display: flex;
+justify-content: center;
+}
+
+.captains-selection {
+text-align: center;
+margin-top: 10px;
+background-color: #f0f0f0; 
+border-radius: 8px;
+padding: 20px;
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.captains label {
+font-weight: bold;
+font-size: 16px;
+color: #333; 
+margin-right: 10px;
+}
+
+select {
+padding: 10px;
+border: 1px solid #ccc;
+border-radius: 5px;
+font-size: 16px;
+background-color: #f7f7f7; 
+color: #333; 
+margin-right: 10px;
+transition: border-color 0.2s;
+}
+
+select#viceCaptainSelect {
+margin-top: 10px;
+}
+
+select:focus {
+border-color: #007bff; 
+outline: none;
+}
+
+.captains label:hover {
+cursor: pointer;
+color: #007bff; 
+}
+
+#confirm_btn,#cancel_btn {
+padding: 10px 20px;
+margin:20px,10px,10px,10px;
+cursor: pointer;
+background-color: transparent;
+color: black;
+font-weight: bold;
+transition: color 0.3s;
+border: 0;
+font-size: 18px; /* Slightly smaller font size than the tab buttons */
+text-align: center;
+border: 2px solid black; /* Add a border to the buttons */
+border-radius: 5px; /* Add rounded corners */
+}
+
+#confirm_btn:hover,#cancel_btn:hover {
+background-color: #f0f0f0; /* Change background color on hover */
+}
+
+.team_page{
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center horizontally */
+    justify-content: center; /* Center vertically */
+}

@@ -1,12 +1,12 @@
 import React, { useState, useEffect, } from 'react';
 import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
-import './mymatches_styles.css';
+import '../css/mymatches_styles.css';
 
 const MyMatches = () => {
   const [teamData, setTeamData] = useState([]);
   const [selectedTeam, setSelectedTeam] = useState(null); 
-  const [loading, setLoading] = useState(true);
+  const [loading, setLoading] = useState(true); 
   const navigate = useNavigate();
 
   const username = localStorage.getItem('username');

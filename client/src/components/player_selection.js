@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import '../css/team_page_style.css';
-import { useLocation,useNavigate, } from 'react-router-dom';
+import '../css/player_selec_style.css';
+import { useLocation, useNavigate } from 'react-router-dom';
 import axios from 'axios';
 
 const PlayerCard = ({ player, isSelected, onSelect, onDeselect }) => {
@@ -14,7 +14,7 @@ const PlayerCard = ({ player, isSelected, onSelect, onDeselect }) => {
     if (isSelected) {
       onDeselect(id);
     } else {
-      onSelect(id, name); 
+      onSelect(id, name);
     }
   };
 
@@ -28,82 +28,86 @@ const PlayerCard = ({ player, isSelected, onSelect, onDeselect }) => {
   );
 };
 
-const TeamPage = () => {
-  const location = useLocation();
-  const navigate = useNavigate();
-  const queryParams = new URLSearchParams(location.search);
-  const matchId = queryParams.get('matchId');
-  const contestId = queryParams.get('contestId');
-  const team1Id = queryParams.get('team1Id');
-  const team2Id = queryParams.get('team2Id');
-  const team1Name = queryParams.get('team1Name');
-  const team2Name = queryParams.get('team2Name');
-  const username = localStorage.getItem("username");
+const PlayerSelection = ({matchId,username,contestId,team1Name,team2Name, isEditing, setIsEditing}) => {
+    const location = useLocation();
+    const navigate = useNavigate();
 
-  const team1Data = require(`../team_${team1Id}.json`);
-  const team2Data = require(`../team_${team2Id}.json`);
+    const match_data = require('../matches_data.json');
 
-  const players1 = team1Data.player;
-  const players2 = team2Data.player;
-
-  const [selectedPlayers, setSelectedPlayers] = useState([]);
-  const [captain, setCaptain] = useState("");
-  const [viceCaptain, setViceCaptain] = useState("");
-
-  const handleSelect = (playerId, playerName) => {
-    if (selectedPlayers.length < 11) {
-      if (!selectedPlayers.find((player) => player.id === playerId)) {
-        setSelectedPlayers([...selectedPlayers, { id: playerId, name: playerName }]);
-      }
-    } else {
-      alert('You have already selected 11 players. You cannot select more.');
+    function getTeamIdsByMatchId(matchId) {
+        const match = match_data.find((match) => match.matchId === matchId);
+        if (match) {
+          const { team1Id, team2Id } = match;
+          return { team1Id, team2Id };
+        } else {
+          return null; 
+        }
     }
-  };
 
-  const handleDeselect = (playerId) => {
-    const updatedPlayers = selectedPlayers.filter((player) => player.id !== playerId);
-    setSelectedPlayers(updatedPlayers);
-    if (captain === playerId) {
-      setCaptain(null);
-    }
-    if (viceCaptain === playerId) {
-      setViceCaptain(null);
-    }
-  };
+    const teamIds = getTeamIdsByMatchId(matchId);
 
-  const handleCreateTeam = () => {
-    if (selectedPlayers.length === 11 && captain && viceCaptain) {
-      const teamData = {
-        username: username,
-        matchId: matchId,
-        contestId:contestId,
-        team1Name: team1Name,
-        team2Name: team2Name,
-        selectedPlayers: selectedPlayers,
-        captain: captain,
-        viceCaptain: viceCaptain,
-      };
+    const team1Id = teamIds.team1Id;
+    const team2Id = teamIds.team2Id;
 
-      axios.post("http://localhost:3001/team_page/create", teamData)
-        .then((response) => {
-          alert('Team created with 11 players, captain, and vice-captain.');
-          document.getElementById('createbtn').disabled = true;
-          navigate('/home');
-        })
-        .catch((error) => {
-          alert('Failed to create a team: ' + error.message);
-        });
-    } else {
-      alert('Please select 11 players, a captain, and a vice-captain to create a team.');
-    }
-  };
+    const team1Data = require(`../team_${team1Id}.json`);
+    const team2Data = require(`../team_${team2Id}.json`);
 
-  useEffect(() => {
-    if ("captain" && "viceCaptain" === "captain") {
-      setViceCaptain("");
-      alert("Captain and vice-captain cannot be the same!");
-    }
-  }, [captain, viceCaptain]);
+    const players1 = team1Data.player;
+    const players2 = team2Data.player;
+
+    const [selectedPlayers, setSelectedPlayers] = useState([]);
+    const [captain, setCaptain] = useState("");
+    const [viceCaptain, setViceCaptain] = useState("");
+
+    const handleSelect = (playerId, playerName) => {
+        if (selectedPlayers.length < 11) {
+        if (!selectedPlayers.find((player) => player.id === playerId)) {
+            setSelectedPlayers([...selectedPlayers, { id: playerId, name: playerName }]);
+        }
+        } else {
+        alert('You have already selected 11 players. You cannot select more.');
+        }
+    };
+
+    const handleDeselect = (playerId) => {
+        const updatedPlayers = selectedPlayers.filter((player) => player.id !== playerId);
+        setSelectedPlayers(updatedPlayers);
+        if (captain === playerId) {
+        setCaptain(null);
+        }
+        if (viceCaptain === playerId) {
+        setViceCaptain(null);
+        }
+    };
+
+    useEffect(() => {
+        if (captain && viceCaptain && captain === viceCaptain) {
+        setViceCaptain("");
+        alert("Captain and vice-captain cannot be the same!");
+        }
+    }, [captain, viceCaptain]);
+
+    const handleConfirm = () => {
+        const dataToUpdate = {
+          username: username,
+          matchId: matchId,
+          contestId: contestId,
+          captain: captain,
+          viceCaptain: viceCaptain,
+          players: selectedPlayers, 
+        };
+      
+        axios.post('http://localhost:3001/team_page/update', dataToUpdate)
+          .then((response) => {
+            setIsEditing(false);
+            alert('Players data updated successfully!');
+            navigate('/mymatches');
+          })
+          .catch((error) => {
+            console.error('Error updating players data: ', error);
+            alert('Failed to update players data. Please try again later.');
+          });
+        };
 
   return (
     <div className='team_page'>
@@ -172,12 +176,13 @@ const TeamPage = () => {
               ))}
           </select>
         </div>
-      </div>
-      <div className='btn'>
-        <button id='createbtn' className='create_btn' onClick={handleCreateTeam}>Create</button>
+        <div className='buttons-container'>
+          <button onClick={handleConfirm} id='confirm_btn'>Confirm</button>
+          <button onClick={() => setIsEditing(false)} id='cancel_btn'>Cancel</button>
+        </div>
       </div>
     </div>
   );
 };
 
-export default TeamPage;
+export default PlayerSelection;

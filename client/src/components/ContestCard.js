@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './Contestcard.module.css';
+import styles from '../css/Contestcard.module.css';
 import { useNavigate, useLocation } from 'react-router-dom';
 
 function ContestCard({ contest,contestId }) {

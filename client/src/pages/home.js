@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
-import styles from './Home.module.css';
+import styles from '../css/Home.module.css';
 import { useNavigate } from 'react-router-dom';
-import { useUserContext } from './user_context';
+// import { useUserContext } from './user_context';
 
 function MatchCard(props) {
   const { team1Name, team2Name, city, matchId, status:initialStatus, team1Id, team2Id } = props;

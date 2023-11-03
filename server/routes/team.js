@@ -40,13 +40,36 @@ router.get('/teams', async (req, res) => {
 
     const {username} = req.query;
 
-
     const teams = await TeamModel.find({username});
 
     res.status(200).json(teams);
   } catch (error) {
     console.error('Error fetching all teams:', error);
     res.status(500).json({ error: 'Failed to fetch  teams. Please try again later.' });
+  }
+});
+
+router.post('/update', async (req, res) => {
+  try {
+    const { username, matchId, contestId, captain, viceCaptain, players } = req.body;
+
+    const existingTeam = await TeamModel.findOne({ username, matchId, contestId });
+
+    if (!existingTeam) {
+      return res.status(404).json({ error: 'Team not found.' });
+    }
+
+    existingTeam.captain = captain;
+    existingTeam.vice_captain = viceCaptain;
+    existingTeam.players = players;
+
+    const updatedTeam = await existingTeam.save();
+
+    res.status(200).json(updatedTeam);
+  } catch (error) {
+    console.error('Error updating team data:', error);
+
+    res.status(500).json({ error: 'Failed to update team data. Please try again later.' });
   }
 });
 

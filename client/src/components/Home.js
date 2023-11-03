@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import styles from './Home.module.css'; // Import the CSS module
+import styles from '../css/Home.module.css'; // Import the CSS module
 
 function MatchCard(props) {
   const { team1Name, team2Name, city, status } = props;

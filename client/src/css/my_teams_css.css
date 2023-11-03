@@ -1,0 +1,150 @@
+/* Fixed styles for tab buttons */
+.tab-buttons {
+display: flex;
+justify-content: flex-start; /* Align buttons to the left */
+width: 100%; /* Set a fixed width for the container */
+margin-bottom: 20px;
+}
+
+.tab-button {
+padding: 10px 20px;
+margin: 0 10px;
+cursor: pointer;
+background-color: transparent;
+color: black;
+font-weight: bold;
+transition: color 0.3s;
+position: relative;
+border: 0;
+font-size: 25px;
+width: 150px; /* Fixed width for the tab buttons */
+text-align: center; /* Center the text within the tab button */
+}
+
+.tab-button:after {
+content: '';
+display: block;
+position: absolute;
+bottom: 0;
+left: 0;
+height: 2px;
+width: 0;
+background-color: black;
+transition: width 0.3s;
+}
+
+.tab-button:hover {
+color: black;
+}
+
+.tab-button.active {
+color: black;
+}
+
+.tab-button.active:after {
+width: 100%;
+}
+
+
+/* Existing styles for leaderboard section */
+.leaderboard-title {
+font-size: 24px;
+margin-bottom: 16px;
+}
+
+.leaderboard-entry {
+display: flex;
+justify-content: space-between;
+margin-bottom: 8px;
+padding: 8px;
+background-color: #f0f0f0;
+border-radius: 4px;
+}
+
+.team-title,
+leaderboard-title {
+text-align: center;
+font-size: 24px;
+margin: 20px 0;
+}
+
+.team-info {
+text-align: center;
+font-size: 18px;
+margin: 10px 0;
+}
+
+.captain-info,
+.vice-captain-info {
+text-align: center;
+font-weight: bold;
+margin: 5px 0;
+}
+
+.players-title {
+font-weight: bold;
+margin: 20px 0;
+}
+
+.player-list {
+list-style-type: none;
+padding: 0;
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+}
+
+.player-info {
+padding: 5px 10px;
+margin: 5px;
+background-color: #f0f0f0;
+border: 1px solid #ccc;
+border-radius: 5px;
+font-weight: bold;
+text-align: center;
+}
+
+.username {
+font-weight: bold;
+}
+
+.points {
+color: #007bff;
+}
+
+/* Loading Message */
+.loading-message {
+font-size: 16px;
+margin: 16px;
+text-align: center;
+}
+
+/* Edit and Cancel Buttons */
+#edit-button, #cancel-button {
+padding: 10px 20px;
+margin: 0 10px;
+cursor: pointer;
+background-color: transparent;
+color: black;
+font-weight: bold;
+transition: color 0.3s;
+border: 0;
+font-size: 18px; /* Slightly smaller font size than the tab buttons */
+text-align: center;
+border: 2px solid black; /* Add a border to the buttons */
+border-radius: 5px; /* Add rounded corners */
+}
+
+#edit-button:hover, #cancel-button:hover {
+background-color: #f0f0f0; /* Change background color on hover */
+}
+
+#edit-button:active, #cancel-button:active {
+transform: translateY(2px); /* Add a slight downward effect when clicked */
+}
+
+.edit_msg {
+font-size: 16px;
+margin: 16px;
+text-align: center;
+}
