@@ -9,6 +9,8 @@ const MyTeam = () => {
   const { selectedTeam } = location.state || {};
   const [activeTab, setActiveTab] = useState('team');
   const [leaderboardData, setLeaderboardData] = useState(null);
+  const [playerLeaderboardData, setPlayerLeaderboardData] = useState(null); 
+  const [finalPlayersWithPoints, setFinalPlayersWithPoints] = useState(null); 
   const matchId = selectedTeam.matchId;
   const username = selectedTeam.username;
   const contestId = selectedTeam.contestId;
@@ -29,7 +31,8 @@ const MyTeam = () => {
     axios
       .get('http://localhost:3001/my_teams/leaderboard', { params: { matchData: matchData } })
       .then((response) => {
-        setLeaderboardData(response.data);
+        setLeaderboardData(response.data.sortedUserPoints);
+        setPlayerLeaderboardData(response.data.finalPlayersWithPoints)
       })
       .catch((error) => {
         console.error('Error fetching leaderboard data: ', error);
@@ -96,6 +99,14 @@ const MyTeam = () => {
         >
           Leaderboard
         </button>
+        <button
+          id="player-leaderboard-tab"
+          className={`tab-button ${activeTab === 'playerLeaderboard' ? 'active' : ''}`}
+          onClick={() => handleLeadClick('playerLeaderboard')}
+        >
+          Player Leaderboard
+        </button>
+
       </div>
 
       {activeTab === 'team' && (
@@ -146,7 +157,7 @@ const MyTeam = () => {
           <h1 id="leaderboard-title" className="leaderboard-title">
             Leaderboard
           </h1>
-          {leaderboardData ? (
+          {playerLeaderboardData ? (
             <ul id="leaderboard-list" className="leaderboard-list">
               {leaderboardData.map((entry, index) => (
                 <li key={index} className="leaderboard-entry">
@@ -157,9 +168,29 @@ const MyTeam = () => {
             </ul>
           ) : (
             <p className="loading-message">Loading leaderboard data...</p>
+          )}      
+        </div>  
+      )}
+
+      {activeTab === 'playerLeaderboard' && (
+        <div className="leaderboard">
+          <h1 id="player-leaderboard-title" className="leaderboard-title">
+            Player Leaderboard
+          </h1>
+          {playerLeaderboardData ? (
+            <ul id="player-leaderboard-list" className="leaderboard-list">
+              {playerLeaderboardData.slice(0,10).map((entry, index) => (
+                <li key={index} className="leaderboard-entry">
+                  <span className="player-name">{entry.name}</span>
+                  <span className="player-points">{entry.points} points</span>
+                </li>
+              ))}
+            </ul>
+          ) : (
+            <p className="loading-message">Loading player leaderboard data...</p>
           )}
         </div>
-      )}
+      )}     
     </div>
   );
 };

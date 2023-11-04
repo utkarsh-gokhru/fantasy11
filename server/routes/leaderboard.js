@@ -1,6 +1,9 @@
 import express from 'express';
 import { TeamModel } from '../models/teams.js';
 import { calculateBatterPoints, calculateBowlerPoints, get_sc } from '../points.js';
+import mongoose from 'mongoose';
+import { PlayerData } from '../models/leaderboard_mod.js';
+import { UserData } from '../models/leaderboard_mod.js';
 
 const router = express.Router();
 
@@ -58,13 +61,46 @@ router.get('/leaderboard', async (req, res) => {
             user.rank = index + 1;
         });
 
-        console.log(sortedUserPoints);
+        const player_data = new PlayerData({
+            matchId: matchId,
+            contestId: contestId,
+            leaderboard: finalPlayersWithPoints
+        });
+          
+        const user_data = new UserData({
+        matchId: matchId,
+        contestId: contestId,
+        leaderboard: sortedUserPoints
+        });
 
-        res.status(200).json(sortedUserPoints);
+        const playerDataExists = await PlayerData.exists({ matchId, contestId });
+        const userDataExists = await UserData.exists({ matchId, contestId });
+
+        if (!playerDataExists && !userDataExists) {
+            const player_data = new PlayerData({
+                matchId: matchId,
+                contestId: contestId,
+                leaderboard: finalPlayersWithPoints
+            });
+
+            const user_data = new UserData({
+                matchId: matchId,
+                contestId: contestId,
+                leaderboard: sortedUserPoints
+            });
+
+            await player_data.save();
+            await user_data.save();
+        } else {
+            console.log('Data already exists for matchId and contestId:', matchId, contestId);
+        }
+
+        res.status(200).json({sortedUserPoints,finalPlayersWithPoints});
     } catch (error) {
         console.error('Error fetching users with players:', error);
         res.status(500).json({ error: 'Failed to fetch users with players. Please try again later.' });
     }
+    
 });
 
 export { router as LeaderboardRouter };
