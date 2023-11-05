@@ -22,9 +22,9 @@ export function get_sc(id) {
     port: null,
     path: `/mcenter/v1/${id}/scard`,
     headers: {
-      'X-RapidAPI-Key': '33692e1a65mshb5409f761d142bfp1fbc64jsn057b114ebff9',
+      'X-RapidAPI-Key': '13bf0cbe32msh10c2779977192edp1d1480jsn5d48a77a8b67',
       'X-RapidAPI-Host': 'cricbuzz-cricket.p.rapidapi.com'
-    }
+    },
   };
 
   return new Promise((resolve, reject) => {

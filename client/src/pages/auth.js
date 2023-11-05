@@ -109,7 +109,7 @@ const Form = ({ username, setUsername, password, setPassword, label, onSubmit, e
             onChange={(event) => setPassword(event.target.value)}
           />
         </div>
-        <button type="submit">{label}</button>
+        <button className="three-d-button" type="submit">{label}</button>
       </form>
     </div>
   );
