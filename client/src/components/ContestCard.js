@@ -2,7 +2,7 @@ import React from 'react';
 import styles from '../css/Contestcard.module.css';
 import { useNavigate, useLocation } from 'react-router-dom';
 
-function ContestCard({ contest,contestId }) {
+function ContestCard({ contest,contestId,contestFee}) {
   const location = useLocation();
   // const queryParams = new URLSearchParams(location.search);
   // const matchId = queryParams.get('matchId');
@@ -23,7 +23,7 @@ function ContestCard({ contest,contestId }) {
       <p>Prize Pool: ${contest.prizePool}</p>
       <p>Participants: {contest.participants}</p>
       <p>Start Time: {new Date(contest.startTime).toLocaleString()}</p>
-      <button onClick={() => navigate(`/team_page?matchId=${matchId}&contestId=${contestId}&team1Id=${team1Id}&team2Id=${team2Id}&team1Name=${team1Name}&team2Name=${team2Name}`)}>Join Contest</button>
+      <button onClick={() => navigate(`/team_page?matchId=${matchId}&contestId=${contestId}&team1Id=${team1Id}&team2Id=${team2Id}&team1Name=${team1Name}&team2Name=${team2Name} &contestFee= ${contestFee}`)}>Join Contest</button>
     </div>
   );
   }
