@@ -1,0 +1,2204 @@
+{
+    "typeMatches": [
+        {
+            "matchType": "International",
+            "seriesMatches": [
+                {
+                    "seriesAdWrapper": {
+                        "seriesId": 6780,
+                        "seriesName": "West Indies tour of England, 2024",
+                        "matches": [
+                            {
+                                "matchInfo": {
+                                    "matchId": 76493,
+                                    "seriesId": 6780,
+                                    "seriesName": "West Indies tour of England, 2024",
+                                    "matchDesc": "2nd Test",
+                                    "matchFormat": "TEST",
+                                    "startDate": "1721296800000",
+                                    "endDate": "1721667600000",
+                                    "state": "Preview",
+                                    "status": "Match starts at Jul 18, 10:00 GMT",
+                                    "team1": {
+                                        "teamId": 9,
+                                        "teamName": "England",
+                                        "teamSName": "ENG",
+                                        "imageId": 172123
+                                    },
+                                    "team2": {
+                                        "teamId": 10,
+                                        "teamName": "West Indies",
+                                        "teamSName": "WI",
+                                        "imageId": 172124
+                                    },
+                                    "venueInfo": {
+                                        "id": 18,
+                                        "ground": "Trent Bridge",
+                                        "city": "Nottingham",
+                                        "timezone": "+01:00",
+                                        "latitude": "52.936884",
+                                        "longitude": "-1.132230"
+                                    },
+                                    "seriesStartDt": "1719964800000",
+                                    "seriesEndDt": "1722470400000",
+                                    "isTimeAnnounced": true,
+                                    "stateTitle": "Preview"
+                                }
+                            }
+                        ]
+                    }
+                },
+                {
+                    "adDetail": {
+                        "name": "native_matches",
+                        "layout": "native_large",
+                        "position": 1
+                    }
+                },
+                {
+                    "seriesAdWrapper": {
+                        "seriesId": 7572,
+                        "seriesName": "ICC Cricket World Cup League Two 2023-27",
+                        "matches": [
+                            {
+                                "matchInfo": {
+                                    "matchId": 94287,
+                                    "seriesId": 7572,
+                                    "seriesName": "ICC Cricket World Cup League Two 2023-27",
+                                    "matchDesc": "14th Match",
+                                    "matchFormat": "ODI",
+                                    "startDate": "1721296800000",
+                                    "endDate": "1721325600000",
+                                    "state": "Preview",
+                                    "status": "Match starts at Jul 18, 10:00 GMT",
+                                    "team1": {
+                                        "teamId": 161,
+                                        "teamName": "Namibia",
+                                        "teamSName": "NAM",
+                                        "imageId": 172229
+                                    },
+                                    "team2": {
+                                        "teamId": 304,
+                                        "teamName": "Oman",
+                                        "teamSName": "OMAN",
+                                        "imageId": 172353
+                                    },
+                                    "venueInfo": {
+                                        "id": 573,
+                                        "ground": "Forthill",
+                                        "city": "Dundee",
+                                        "timezone": "+01:00",
+                                        "latitude": "56.465069",
+                                        "longitude": "-2.865410"
+                                    },
+                                    "seriesStartDt": "1707955200000",
+                                    "seriesEndDt": "1806537600000",
+                                    "isTimeAnnounced": true,
+                                    "stateTitle": "Preview"
+                                }
+                            },
+                            {
+                                "matchInfo": {
+                                    "matchId": 94296,
+                                    "seriesId": 7572,
+                                    "seriesName": "ICC Cricket World Cup League Two 2023-27",
+                                    "matchDesc": "15th Match",
+                                    "matchFormat": "ODI",
+                                    "startDate": "1721469600000",
+                                    "endDate": "1721498400000",
+                                    "state": "Upcoming",
+                                    "status": "Match starts at Jul 20, 10:00 GMT",
+                                    "team1": {
+                                        "teamId": 23,
+                                        "teamName": "Scotland",
+                                        "teamSName": "SCO",
+                                        "imageId": 172137
+                                    },
+                                    "team2": {
+                                        "teamId": 161,
+                                        "teamName": "Namibia",
+                                        "teamSName": "NAM",
+                                        "imageId": 172229
+                                    },
+                                    "venueInfo": {
+                                        "id": 573,
+                                        "ground": "Forthill",
+                                        "city": "Dundee",
+                                        "timezone": "+01:00",
+                                        "latitude": "56.465069",
+                                        "longitude": "-2.865410"
+                                    },
+                                    "seriesStartDt": "1707955200000",
+                                    "seriesEndDt": "1806537600000",
+                                    "isTimeAnnounced": true,
+                                    "stateTitle": "Upcoming Match"
+                                }
+                            },
+                            {
+                                "matchInfo": {
+                                    "matchId": 94305,
+                                    "seriesId": 7572,
+                                    "seriesName": "ICC Cricket World Cup League Two 2023-27",
+                                    "matchDesc": "16th Match",
+                                    "matchFormat": "ODI",
+                                    "startDate": "1721642400000",
+                                    "endDate": "1721671200000",
+                                    "state": "Upcoming",
+                                    "status": "Match starts at Jul 22, 10:00 GMT",
+                                    "team1": {
+                                        "teamId": 23,
+                                        "teamName": "Scotland",
+                                        "teamSName": "SCO",
+                                        "imageId": 172137
+                                    },
+                                    "team2": {
+                                        "teamId": 304,
+                                        "teamName": "Oman",
+                                        "teamSName": "OMAN",
+                                        "imageId": 172353
+                                    },
+                                    "venueInfo": {
+                                        "id": 573,
+                                        "ground": "Forthill",
+                                        "city": "Dundee",
+                                        "timezone": "+01:00",
+                                        "latitude": "56.465069",
+                                        "longitude": "-2.865410"
+                                    },
+                                    "seriesStartDt": "1707955200000",
+                                    "seriesEndDt": "1806537600000",
+                                    "isTimeAnnounced": true,
+                                    "stateTitle": "Upcoming Match"
+                                }
+                            },
+                            {
+                                "matchInfo": {
+                                    "matchId": 94314,
+                                    "seriesId": 7572,
+                                    "seriesName": "ICC Cricket World Cup League Two 2023-27",
+                                    "matchDesc": "17th Match",
+                                    "matchFormat": "ODI",
+                                    "startDate": "1721815200000",
+                                    "endDate": "1721844000000",
+                                    "state": "Upcoming",
+                                    "status": "Match starts at Jul 24, 10:00 GMT",
+                                    "team1": {
+                                        "teamId": 161,
+                                        "teamName": "Namibia",
+                                        "teamSName": "NAM",
+                                        "imageId": 172229
+                                    },
+                                    "team2": {
+                                        "teamId": 304,
+                                        "teamName": "Oman",
+                                        "teamSName": "OMAN",
+                                        "imageId": 172353
+                                    },
+                                    "venueInfo": {
+                                        "id": 573,
+                                        "ground": "Forthill",
+                                        "city": "Dundee",
+                                        "timezone": "+01:00",
+                                        "latitude": "56.465069",
+                                        "longitude": "-2.865410"
+                                    },
+                                    "seriesStartDt": "1707955200000",
+                                    "seriesEndDt": "1806537600000",
+                                    "isTimeAnnounced": true,
+                                    "stateTitle": "Upcoming Match"
+                                }
+                            }
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "matchType": "League",
+            "seriesMatches": [
+                {
+                    "seriesAdWrapper": {
+                        "seriesId": 8098,
+                        "seriesName": "Major League Cricket 2024",
+                        "matches": [
+                            {
+                                "matchInfo": {
+                                    "matchId": 94989,
+                                    "seriesId": 8098,
+                                    "seriesName": "Major League Cricket 2024",
+                                    "matchDesc": "15th Match",
+                                    "matchFormat": "T20",
+                                    "startDate": "1721242800000",
+                                    "endDate": "1721255400000",
+                                    "state": "Preview",
+                                    "status": "Match starts at Jul 18, 19:00 GMT",
+                                    "team1": {
+                                        "teamId": 1594,
+                                        "teamName": "Seattle Orcas",
+                                        "teamSName": "SOR",
+                                        "imageId": 333489
+                                    },
+                                    "team2": {
+                                        "teamId": 1570,
+                                        "teamName": "Los Angeles Knight Riders",
+                                        "teamSName": "LAKR",
+                                        "imageId": 333484
+                                    },
+                                    "venueInfo": {
+                                        "id": 1671,
+                                        "ground": "Church Street Park",
+                                        "city": "Morrisville",
+                                        "timezone": "-04:00",
+                                        "latitude": "35.819641",
+                                        "longitude": "-78.823021"
+                                    },
+                                    "seriesStartDt": "1720137600000",
+                                    "seriesEndDt": "1722297600000",
+                                    "isTimeAnnounced": true,
+                                    "stateTitle": "Preview"
+                                }
+                            },
+                            {
+                                "matchInfo": {
+                                    "matchId": 94993,
+                                    "seriesId": 8098,
+                                    "seriesName": "Major League Cricket 2024",
+                                    "matchDesc": "16th Match",
+                                    "matchFormat": "T20",
+                                    "startDate": "1721349000000",
+                                    "endDate": "1721361600000",
+                                    "state": "Upcoming",
+                                    "status": "Match starts at Jul 19, 00:30 GMT",
+                                    "team1": {
+                                        "teamId": 1573,
+                                        "teamName": "MI New York",
+                                        "teamSName": "MINY",
+                                        "imageId": 334729
+                                    },
+                                    "team2": {
+                                        "teamId": 1584,
+                                        "teamName": "San Francisco Unicorns",
+                                        "teamSName": "SFU",
+                                        "imageId": 333487
+                                    },
+                                    "venueInfo": {
+                                        "id": 1668,
+                                        "ground": "Grand Prairie Stadium",
+                                        "city": "Dallas",
+                                        "timezone": "-05:00",
+                                        "latitude": "32.67942",
+                                        "longitude": "-97.028338"
+                                    },
+                                    "seriesStartDt": "1720137600000",
+                                    "seriesEndDt": "1722297600000",
+                                    "isTimeAnnounced": true,
+                                    "stateTitle": "Upcoming Match"
+                                }
+                            },
+                            {
+                                "matchInfo": {
+                                    "matchId": 95002,
+                                    "seriesId": 8098,
+                                    "seriesName": "Major League Cricket 2024",
+                                    "matchDesc": "17th Match",
+                                    "matchFormat": "T20",
+                                    "startDate": "1721435400000",
+                                    "endDate": "1721448000000",
+                                    "state": "Upcoming",
+                                    "status": "Match starts at Jul 20, 00:30 GMT",
+                                    "team1": {
+                                        "teamId": 1577,
+                                        "teamName": "Texas Super Kings",
+                                        "teamSName": "TSK",
+                                        "imageId": 333486
+                                    },
+                                    "team2": {
+                                        "teamId": 1591,
+                                        "teamName": "Washington Freedom",
+                                        "teamSName": "WAF",
+                                        "imageId": 333488
+                                    },
+                                    "venueInfo": {
+                                        "id": 1668,
+                                        "ground": "Grand Prairie Stadium",
+                                        "city": "Dallas",
+                                        "timezone": "-05:00",
+                                        "latitude": "32.67942",
+                                        "longitude": "-97.028338"
+                                    },
+                                    "seriesStartDt": "1720137600000",
+                                    "seriesEndDt": "1722297600000",
+                                    "isTimeAnnounced": true,
+                                    "stateTitle": "Upcoming Match"
+                                }
+                            },
+                            {
+                                "matchInfo": {
+                                    "matchId": 95007,
+                                    "seriesId": 8098,
+                                    "seriesName": "Major League Cricket 2024",
+                                    "matchDesc": "18th Match",
+                                    "matchFormat": "T20",
+                                    "startDate": "1721521800000",
+                                    "endDate": "1721534400000",
+                                    "state": "Upcoming",
+                                    "status": "Match starts at Jul 21, 00:30 GMT",
+                                    "team1": {
+                                        "teamId": 1584,
+                                        "teamName": "San Francisco Unicorns",
+                                        "teamSName": "SFU",
+                                        "imageId": 333487
+                                    },
+                                    "team2": {
+                                        "teamId": 1594,
+                                        "teamName": "Seattle Orcas",
+                                        "teamSName": "SOR",
+                                        "imageId": 333489
+                                    },
+                                    "venueInfo": {
+                                        "id": 1668,
+                                        "ground": "Grand Prairie Stadium",
+                                        "city": "Dallas",
+                                        "timezone": "-05:00",
+                                        "latitude": "32.67942",
+                                        "longitude": "-97.028338"
+                                    },
+                                    "seriesStartDt": "1720137600000",
+                                    "seriesEndDt": "1722297600000",
+                                    "isTimeAnnounced": true,
+                                    "stateTitle": "Upcoming Match"
+                                }
+                            },
+                            {
+                                "matchInfo": {
+                                    "matchId": 95011,
+                                    "seriesId": 8098,
+                                    "seriesName": "Major League Cricket 2024",
+                                    "matchDesc": "19th Match",
+                                    "matchFormat": "T20",
+                                    "startDate": "1721608200000",
+                                    "endDate": "1721620800000",
+                                    "state": "Upcoming",
+                                    "status": "Match starts at Jul 22, 00:30 GMT",
+                                    "team1": {
+                                        "teamId": 1570,
+                                        "teamName": "Los Angeles Knight Riders",
+                                        "teamSName": "LAKR",
+                                        "imageId": 333484
+                                    },
+                                    "team2": {
+                                        "teamId": 1573,
+                                        "teamName": "MI New York",
+                                        "teamSName": "MINY",
+                                        "imageId": 334729
+                                    },
+                                    "venueInfo": {
+                                        "id": 1668,
+                                        "ground": "Grand Prairie Stadium",
+                                        "city": "Dallas",
+                                        "timezone": "-05:00",
+                                        "latitude": "32.67942",
+                                        "longitude": "-97.028338"
+                                    },
+                                    "seriesStartDt": "1720137600000",
+                                    "seriesEndDt": "1722297600000",
+                                    "isTimeAnnounced": true,
+                                    "stateTitle": "Upcoming Match"
+                                }
+                            },
+                            {
+                                "matchInfo": {
+                                    "matchId": 95016,
+                                    "seriesId": 8098,
+                                    "seriesName": "Major League Cricket 2024",
+                                    "matchDesc": "20th Match",
+                                    "matchFormat": "T20",
+                                    "startDate": "1721694600000",
+                                    "endDate": "1721707200000",
+                                    "state": "Upcoming",
+                                    "status": "Match starts at Jul 23, 00:30 GMT",
+                                    "team1": {
+                                        "teamId": 1584,
+                                        "teamName": "San Francisco Unicorns",
+                                        "teamSName": "SFU",
+                                        "imageId": 333487
+                                    },
+                                    "team2": {
+                                        "teamId": 1591,
+                                        "teamName": "Washington Freedom",
+                                        "teamSName": "WAF",
+                                        "imageId": 333488
+                                    },
+                                    "venueInfo": {
+                                        "id": 1668,
+                                        "ground": "Grand Prairie Stadium",
+                                        "city": "Dallas",
+                                        "timezone": "-05:00",
+                                        "latitude": "32.67942",
+                                        "longitude": "-97.028338"
+                                    },
+                                    "seriesStartDt": "1720137600000",
+                                    "seriesEndDt": "1722297600000",
+                                    "isTimeAnnounced": true,
+                                    "stateTitle": "Upcoming Match"
+                                }
+                            },
+                            {
+                                "matchInfo": {
+                                    "matchId": 95020,
+                                    "seriesId": 8098,
+                                    "seriesName": "Major League Cricket 2024",
+                                    "matchDesc": "21st Match",
+                                    "matchFormat": "T20",
+                                    "startDate": "1721781000000",
+                                    "endDate": "1721793600000",
+                                    "state": "Upcoming",
+                                    "status": "Match starts at Jul 24, 00:30 GMT",
+                                    "team1": {
+                                        "teamId": 1577,
+                                        "teamName": "Texas Super Kings",
+                                        "teamSName": "TSK",
+                                        "imageId": 333486
+                                    },
+                                    "team2": {
+                                        "teamId": 1594,
+                                        "teamName": "Seattle Orcas",
+                                        "teamSName": "SOR",
+                                        "imageId": 333489
+                                    },
+                                    "venueInfo": {
+                                        "id": 1668,
+                                        "ground": "Grand Prairie Stadium",
+                                        "city": "Dallas",
+                                        "timezone": "-05:00",
+                                        "latitude": "32.67942",
+                                        "longitude": "-97.028338"
+                                    },
+                                    "seriesStartDt": "1720137600000",
+                                    "seriesEndDt": "1722297600000",
+                                    "isTimeAnnounced": true,
+                                    "stateTitle": "Upcoming Match"
+                                }
+                            }
+                        ]
+                    }
+                },
+                {
+                    "seriesAdWrapper": {
+                        "seriesId": 7873,
+                        "seriesName": "Lanka Premier League, 2024",
+                        "matches": [
+                            {
+                                "matchInfo": {
+                                    "matchId": 93108,
+                                    "seriesId": 7873,
+                                    "seriesName": "Lanka Premier League, 2024",
+                                    "matchDesc": "Qualifier 1",
+                                    "matchFormat": "T20",
+                                    "startDate": "1721295000000",
+                                    "endDate": "1721307600000",
+                                    "state": "Preview",
+                                    "status": "Match starts at Jul 18, 09:30 GMT",
+                                    "team1": {
+                                        "teamId": 1601,
+                                        "teamName": "Galle Marvels",
+                                        "teamSName": "GAM",
+                                        "imageId": 484924
+                                    },
+                                    "team2": {
+                                        "teamId": 948,
+                                        "teamName": "Jaffna Kings",
+                                        "teamSName": "JKS",
+                                        "imageId": 219029
+                                    },
+                                    "venueInfo": {
+                                        "id": 15,
+                                        "ground": "R.Premadasa Stadium",
+                                        "city": "Colombo",
+                                        "timezone": "+05:30",
+                                        "latitude": "6.939966",
+                                        "longitude": "79.872222"
+                                    },
+                                    "seriesStartDt": "1719792000000",
+                                    "seriesEndDt": "1721692800000",
+                                    "isTimeAnnounced": true,
+                                    "stateTitle": "Preview"
+                                }
+                            },
+                            {
+                                "matchInfo": {
+                                    "matchId": 93110,
+                                    "seriesId": 7873,
+                                    "seriesName": "Lanka Premier League, 2024",
+                                    "matchDesc": "Eliminator",
+                                    "matchFormat": "T20",
+                                    "startDate": "1721311200000",
+                                    "endDate": "1721323800000",
+                                    "state": "Upcoming",
+                                    "status": "Match starts at Jul 18, 14:00 GMT",
+                                    "team1": {
+                                        "teamId": 943,
+                                        "teamName": "Colombo Strikers",
+                                        "teamSName": "CLS",
+                                        "imageId": 333883
+                                    },
+                                    "team2": {
+                                        "teamId": 1608,
+                                        "teamName": "Kandy Falcons",
+                                        "teamSName": "KFS",
+                                        "imageId": 333881
+                                    },
+                                    "venueInfo": {
+                                        "id": 15,
+                                        "ground": "R.Premadasa Stadium",
+                                        "city": "Colombo",
+                                        "timezone": "+05:30",
+                                        "latitude": "6.939966",
+                                        "longitude": "79.872222"
+                                    },
+                                    "seriesStartDt": "1719792000000",
+                                    "seriesEndDt": "1721692800000",
+                                    "isTimeAnnounced": true,
+                                    "stateTitle": "Upcoming Match"
+                                }
+                            },
+                            {
+                                "matchInfo": {
+                                    "matchId": 93112,
+                                    "seriesId": 7873,
+                                    "seriesName": "Lanka Premier League, 2024",
+                                    "matchDesc": "Qualifier 2",
+                                    "matchFormat": "T20",
+                                    "startDate": "1721484000000",
+                                    "endDate": "1721496600000",
+                                    "state": "Upcoming",
+                                    "status": "Match starts at Jul 20, 14:00 GMT",
+                                    "team1": {
+                                        "teamId": 106,
+                                        "teamName": "TBC",
+                                        "teamSName": "TBC",
+                                        "imageId": 172198
+                                    },
+                                    "team2": {
+                                        "teamId": 106,
+                                        "teamName": "TBC",
+                                        "teamSName": "TBC",
+                                        "imageId": 172198
+                                    },
+                                    "venueInfo": {
+                                        "id": 15,
+                                        "ground": "R.Premadasa Stadium",
+                                        "city": "Colombo",
+                                        "timezone": "+05:30",
+                                        "latitude": "6.939966",
+                                        "longitude": "79.872222"
+                                    },
+                                    "seriesStartDt": "1719792000000",
+                                    "seriesEndDt": "1721692800000",
+                                    "isTimeAnnounced": true,
+                                    "stateTitle": "Upcoming Match"
+                                }
+                            },
+                            {
+                                "matchInfo": {
+                                    "matchId": 93119,
+                                    "seriesId": 7873,
+                                    "seriesName": "Lanka Premier League, 2024",
+                                    "matchDesc": "Final",
+                                    "matchFormat": "T20",
+                                    "startDate": "1721570400000",
+                                    "endDate": "1721583000000",
+                                    "state": "Upcoming",
+                                    "status": "Match starts at Jul 21, 14:00 GMT",
+                                    "team1": {
+                                        "teamId": 106,
+                                        "teamName": "TBC",
+                                        "teamSName": "TBC",
+                                        "imageId": 172198
+                                    },
+                                    "team2": {
+                                        "teamId": 106,
+                                        "teamName": "TBC",
+                                        "teamSName": "TBC",
+                                        "imageId": 172198
+                                    },
+                                    "venueInfo": {
+                                        "id": 15,
+                                        "ground": "R.Premadasa Stadium",
+                                        "city": "Colombo",
+                                        "timezone": "+05:30",
+                                        "latitude": "6.939966",
+                                        "longitude": "79.872222"
+                                    },
+                                    "seriesStartDt": "1719792000000",
+                                    "seriesEndDt": "1721692800000",
+                                    "isTimeAnnounced": true,
+                                    "stateTitle": "Upcoming Match"
+                                }
+                            }
+                        ]
+                    }
+                },
+                {
+                    "seriesAdWrapper": {
+                        "seriesId": 7862,
+                        "seriesName": "Tamil Nadu Premier League 2024",
+                        "matches": [
+                            {
+                                "matchInfo": {
+                                    "matchId": 92626,
+                                    "seriesId": 7862,
+                                    "seriesName": "Tamil Nadu Premier League 2024",
+                                    "matchDesc": "16th Match",
+                                    "matchFormat": "T20",
+                                    "startDate": "1721223900000",
+                                    "endDate": "1721236500000",
+                                    "state": "Preview",
+                                    "status": "Match starts at Jul 17, 13:45 GMT",
+                                    "team1": {
+                                        "teamId": 861,
+                                        "teamName": "IDream Tiruppur Tamizhans",
+                                        "teamSName": "ITT",
+                                        "imageId": 206916
+                                    },
+                                    "team2": {
+                                        "teamId": 371,
+                                        "teamName": "Dindigul Dragons",
+                                        "teamSName": "DGD",
+                                        "imageId": 172424
+                                    },
+                                    "venueInfo": {
+                                        "id": 761,
+                                        "ground": "SNR College Cricket Ground",
+                                        "city": "Coimbatore",
+                                        "timezone": "+05:30",
+                                        "latitude": "11.0227749",
+                                        "longitude": "76.9831109"
+                                    },
+                                    "seriesStartDt": "1720137600000",
+                                    "seriesEndDt": "1722902400000",
+                                    "isTimeAnnounced": true,
+                                    "stateTitle": "Preview"
+                                }
+                            },
+                            {
+                                "matchInfo": {
+                                    "matchId": 92633,
+                                    "seriesId": 7862,
+                                    "seriesName": "Tamil Nadu Premier League 2024",
+                                    "matchDesc": "17th Match",
+                                    "matchFormat": "T20",
+                                    "startDate": "1721310300000",
+                                    "endDate": "1721322900000",
+                                    "state": "Upcoming",
+                                    "status": "Match starts at Jul 18, 13:45 GMT",
+                                    "team1": {
+                                        "teamId": 867,
+                                        "teamName": "Salem Spartans",
+                                        "teamSName": "SLST",
+                                        "imageId": 206918
+                                    },
+                                    "team2": {
+                                        "teamId": 367,
+                                        "teamName": "Chepauk Super Gillies",
+                                        "teamSName": "CSG",
+                                        "imageId": 172420
+                                    },
+                                    "venueInfo": {
+                                        "id": 761,
+                                        "ground": "SNR College Cricket Ground",
+                                        "city": "Coimbatore",
+                                        "timezone": "+05:30",
+                                        "latitude": "11.0227749",
+                                        "longitude": "76.9831109"
+                                    },
+                                    "seriesStartDt": "1720137600000",
+                                    "seriesEndDt": "1722902400000",
+                                    "isTimeAnnounced": true,
+                                    "stateTitle": "Upcoming Match"
+                                }
+                            },
+                            {
+                                "matchInfo": {
+                                    "matchId": 92640,
+                                    "seriesId": 7862,
+                                    "seriesName": "Tamil Nadu Premier League 2024",
+                                    "matchDesc": "18th Match",
+                                    "matchFormat": "T20",
+                                    "startDate": "1721483100000",
+                                    "endDate": "1721495700000",
+                                    "state": "Upcoming",
+                                    "status": "Match starts at Jul 20, 13:45 GMT",
+                                    "team1": {
+                                        "teamId": 410,
+                                        "teamName": "Trichy Grand Cholas",
+                                        "teamSName": "TRICHY",
+                                        "imageId": 172460
+                                    },
+                                    "team2": {
+                                        "teamId": 866,
+                                        "teamName": "Nellai Royal Kings",
+                                        "teamSName": "NRK",
+                                        "imageId": 206917
+                                    },
+                                    "venueInfo": {
+                                        "id": 436,
+                                        "ground": "Indian Cement Company Ground",
+                                        "city": "Tirunelveli",
+                                        "timezone": "+05:30",
+                                        "latitude": "11.0113017",
+                                        "longitude": "76.962239"
+                                    },
+                                    "seriesStartDt": "1720137600000",
+                                    "seriesEndDt": "1722902400000",
+                                    "isTimeAnnounced": true,
+                                    "stateTitle": "Upcoming Match"
+                                }
+                            },
+                            {
+                                "matchInfo": {
+                                    "matchId": 92649,
+                                    "seriesId": 7862,
+                                    "seriesName": "Tamil Nadu Premier League 2024",
+                                    "matchDesc": "19th Match",
+                                    "matchFormat": "T20",
+                                    "startDate": "1721555100000",
+                                    "endDate": "1721567700000",
+                                    "state": "Upcoming",
+                                    "status": "Match starts at Jul 21, 09:45 GMT",
+                                    "team1": {
+                                        "teamId": 371,
+                                        "teamName": "Dindigul Dragons",
+                                        "teamSName": "DGD",
+                                        "imageId": 172424
+                                    },
+                                    "team2": {
+                                        "teamId": 368,
+                                        "teamName": "Lyca Kovai Kings",
+                                        "teamSName": "LKK",
+                                        "imageId": 172421
+                                    },
+                                    "venueInfo": {
+                                        "id": 436,
+                                        "ground": "Indian Cement Company Ground",
+                                        "city": "Tirunelveli",
+                                        "timezone": "+05:30",
+                                        "latitude": "11.0113017",
+                                        "longitude": "76.962239"
+                                    },
+                                    "seriesStartDt": "1720137600000",
+                                    "seriesEndDt": "1722902400000",
+                                    "isTimeAnnounced": true,
+                                    "stateTitle": "Upcoming Match"
+                                }
+                            },
+                            {
+                                "matchInfo": {
+                                    "matchId": 92658,
+                                    "seriesId": 7862,
+                                    "seriesName": "Tamil Nadu Premier League 2024",
+                                    "matchDesc": "20th Match",
+                                    "matchFormat": "T20",
+                                    "startDate": "1721569500000",
+                                    "endDate": "1721582100000",
+                                    "state": "Upcoming",
+                                    "status": "Match starts at Jul 21, 13:45 GMT",
+                                    "team1": {
+                                        "teamId": 861,
+                                        "teamName": "IDream Tiruppur Tamizhans",
+                                        "teamSName": "ITT",
+                                        "imageId": 206916
+                                    },
+                                    "team2": {
+                                        "teamId": 867,
+                                        "teamName": "Salem Spartans",
+                                        "teamSName": "SLST",
+                                        "imageId": 206918
+                                    },
+                                    "venueInfo": {
+                                        "id": 436,
+                                        "ground": "Indian Cement Company Ground",
+                                        "city": "Tirunelveli",
+                                        "timezone": "+05:30",
+                                        "latitude": "11.0113017",
+                                        "longitude": "76.962239"
+                                    },
+                                    "seriesStartDt": "1720137600000",
+                                    "seriesEndDt": "1722902400000",
+                                    "isTimeAnnounced": true,
+                                    "stateTitle": "Upcoming Match"
+                                }
+                            },
+                            {
+                                "matchInfo": {
+                                    "matchId": 92678,
+                                    "seriesId": 7862,
+                                    "seriesName": "Tamil Nadu Premier League 2024",
+                                    "matchDesc": "21st Match",
+                                    "matchFormat": "T20",
+                                    "startDate": "1721655900000",
+                                    "endDate": "1721668500000",
+                                    "state": "Upcoming",
+                                    "status": "Match starts at Jul 22, 13:45 GMT",
+                                    "team1": {
+                                        "teamId": 410,
+                                        "teamName": "Trichy Grand Cholas",
+                                        "teamSName": "TRICHY",
+                                        "imageId": 172460
+                                    },
+                                    "team2": {
+                                        "teamId": 367,
+                                        "teamName": "Chepauk Super Gillies",
+                                        "teamSName": "CSG",
+                                        "imageId": 172420
+                                    },
+                                    "venueInfo": {
+                                        "id": 436,
+                                        "ground": "Indian Cement Company Ground",
+                                        "city": "Tirunelveli",
+                                        "timezone": "+05:30",
+                                        "latitude": "11.0113017",
+                                        "longitude": "76.962239"
+                                    },
+                                    "seriesStartDt": "1720137600000",
+                                    "seriesEndDt": "1722902400000",
+                                    "isTimeAnnounced": true,
+                                    "stateTitle": "Upcoming Match"
+                                }
+                            },
+                            {
+                                "matchInfo": {
+                                    "matchId": 92680,
+                                    "seriesId": 7862,
+                                    "seriesName": "Tamil Nadu Premier League 2024",
+                                    "matchDesc": "22nd Match",
+                                    "matchFormat": "T20",
+                                    "startDate": "1721742300000",
+                                    "endDate": "1721754900000",
+                                    "state": "Upcoming",
+                                    "status": "Match starts at Jul 23, 13:45 GMT",
+                                    "team1": {
+                                        "teamId": 369,
+                                        "teamName": "Siechem Madurai Panthers",
+                                        "teamSName": "MADURAI",
+                                        "imageId": 172422
+                                    },
+                                    "team2": {
+                                        "teamId": 368,
+                                        "teamName": "Lyca Kovai Kings",
+                                        "teamSName": "LKK",
+                                        "imageId": 172421
+                                    },
+                                    "venueInfo": {
+                                        "id": 436,
+                                        "ground": "Indian Cement Company Ground",
+                                        "city": "Tirunelveli",
+                                        "timezone": "+05:30",
+                                        "latitude": "11.0113017",
+                                        "longitude": "76.962239"
+                                    },
+                                    "seriesStartDt": "1720137600000",
+                                    "seriesEndDt": "1722902400000",
+                                    "isTimeAnnounced": true,
+                                    "stateTitle": "Upcoming Match"
+                                }
+                            }
+                        ]
+                    }
+                },
+                {
+                    "seriesAdWrapper": {
+                        "seriesId": 7525,
+                        "seriesName": "The Hundred Mens Competition 2024",
+                        "matches": [
+                            {
+                                "matchInfo": {
+                                    "matchId": 88576,
+                                    "seriesId": 7525,
+                                    "seriesName": "The Hundred Mens Competition 2024",
+                                    "matchDesc": "1st Match",
+                                    "matchFormat": "HUN",
+                                    "startDate": "1721755800000",
+                                    "endDate": "1721755800000",
+                                    "state": "Upcoming",
+                                    "status": "Match starts at Jul 23, 17:30 GMT",
+                                    "team1": {
+                                        "teamId": 605,
+                                        "teamName": "Oval Invincibles",
+                                        "teamSName": "OVL",
+                                        "imageId": 202707
+                                    },
+                                    "team2": {
+                                        "teamId": 607,
+                                        "teamName": "Birmingham Phoenix",
+                                        "teamSName": "BRM",
+                                        "imageId": 202709
+                                    },
+                                    "venueInfo": {
+                                        "id": 12,
+                                        "ground": "Kennington Oval",
+                                        "city": "London",
+                                        "timezone": "+01:00",
+                                        "latitude": "51.48368",
+                                        "longitude": "-0.114885"
+                                    },
+                                    "seriesStartDt": "1721692800000",
+                                    "seriesEndDt": "1724112000000",
+                                    "isTimeAnnounced": true,
+                                    "stateTitle": "Upcoming Match"
+                                }
+                            }
+                        ]
+                    }
+                },
+                {
+                    "seriesAdWrapper": {
+                        "seriesId": 7336,
+                        "seriesName": "T20 Blast 2024",
+                        "matches": [
+                            {
+                                "matchInfo": {
+                                    "matchId": 85106,
+                                    "seriesId": 7336,
+                                    "seriesName": "T20 Blast 2024",
+                                    "matchDesc": "North Group",
+                                    "matchFormat": "T20",
+                                    "startDate": "1721237400000",
+                                    "endDate": "1721250000000",
+                                    "state": "Preview",
+                                    "status": "Match starts at Jul 17, 17:30 GMT",
+                                    "team1": {
+                                        "teamId": 143,
+                                        "teamName": "Lancashire",
+                                        "teamSName": "LANCS",
+                                        "imageId": 172210
+                                    },
+                                    "team2": {
+                                        "teamId": 139,
+                                        "teamName": "Nottinghamshire",
+                                        "teamSName": "NOTTS",
+                                        "imageId": 172206
+                                    },
+                                    "venueInfo": {
+                                        "id": 65,
+                                        "ground": "Emirates Old Trafford",
+                                        "city": "Manchester",
+                                        "timezone": "+01:00",
+                                        "latitude": "53.463066",
+                                        "longitude": "-2.291301"
+                                    },
+                                    "seriesStartDt": "1717027200000",
+                                    "seriesEndDt": "1726444800000",
+                                    "isTimeAnnounced": true,
+                                    "stateTitle": "Preview"
+                                }
+                            },
+                            {
+                                "matchInfo": {
+                                    "matchId": 85113,
+                                    "seriesId": 7336,
+                                    "seriesName": "T20 Blast 2024",
+                                    "matchDesc": "North Group",
+                                    "matchFormat": "T20",
+                                    "startDate": "1721320200000",
+                                    "endDate": "1721332800000",
+                                    "state": "Upcoming",
+                                    "status": "Match starts at Jul 18, 16:30 GMT",
+                                    "team1": {
+                                        "teamId": 147,
+                                        "teamName": "Worcestershire",
+                                        "teamSName": "WORCS",
+                                        "imageId": 172214
+                                    },
+                                    "team2": {
+                                        "teamId": 144,
+                                        "teamName": "Derbyshire",
+                                        "teamSName": "DERBY",
+                                        "imageId": 172211
+                                    },
+                                    "venueInfo": {
+                                        "id": 225,
+                                        "ground": "New Road",
+                                        "city": "Worcester",
+                                        "timezone": "+01:00",
+                                        "latitude": "52.189294",
+                                        "longitude": "-2.2268"
+                                    },
+                                    "seriesStartDt": "1717027200000",
+                                    "seriesEndDt": "1726444800000",
+                                    "isTimeAnnounced": true,
+                                    "stateTitle": "Upcoming Match"
+                                }
+                            },
+                            {
+                                "matchInfo": {
+                                    "matchId": 85120,
+                                    "seriesId": 7336,
+                                    "seriesName": "T20 Blast 2024",
+                                    "matchDesc": "South Group",
+                                    "matchFormat": "T20",
+                                    "startDate": "1721323800000",
+                                    "endDate": "1721336400000",
+                                    "state": "Upcoming",
+                                    "status": "Match starts at Jul 18, 17:30 GMT",
+                                    "team1": {
+                                        "teamId": 148,
+                                        "teamName": "Surrey",
+                                        "teamSName": "SUR",
+                                        "imageId": 172215
+                                    },
+                                    "team2": {
+                                        "teamId": 153,
+                                        "teamName": "Hampshire",
+                                        "teamSName": "HAM",
+                                        "imageId": 172220
+                                    },
+                                    "venueInfo": {
+                                        "id": 12,
+                                        "ground": "Kennington Oval",
+                                        "city": "London",
+                                        "timezone": "+01:00",
+                                        "latitude": "51.48368",
+                                        "longitude": "-0.114885"
+                                    },
+                                    "seriesStartDt": "1717027200000",
+                                    "seriesEndDt": "1726444800000",
+                                    "isTimeAnnounced": true,
+                                    "stateTitle": "Upcoming Match"
+                                }
+                            },
+                            {
+                                "matchInfo": {
+                                    "matchId": 85127,
+                                    "seriesId": 7336,
+                                    "seriesName": "T20 Blast 2024",
+                                    "matchDesc": "North Group",
+                                    "matchFormat": "T20",
+                                    "startDate": "1721324700000",
+                                    "endDate": "1721337300000",
+                                    "state": "Upcoming",
+                                    "status": "Match starts at Jul 18, 17:45 GMT",
+                                    "team1": {
+                                        "teamId": 142,
+                                        "teamName": "Northamptonshire",
+                                        "teamSName": "NHNTS",
+                                        "imageId": 172209
+                                    },
+                                    "team2": {
+                                        "teamId": 140,
+                                        "teamName": "Warwickshire",
+                                        "teamSName": "WARKS",
+                                        "imageId": 172207
+                                    },
+                                    "venueInfo": {
+                                        "id": 119,
+                                        "ground": "County Ground",
+                                        "city": "Northampton",
+                                        "timezone": "+01:00",
+                                        "latitude": "52.248160",
+                                        "longitude": "-0.871060"
+                                    },
+                                    "seriesStartDt": "1717027200000",
+                                    "seriesEndDt": "1726444800000",
+                                    "isTimeAnnounced": true,
+                                    "stateTitle": "Upcoming Match"
+                                }
+                            },
+                            {
+                                "matchInfo": {
+                                    "matchId": 85134,
+                                    "seriesId": 7336,
+                                    "seriesName": "T20 Blast 2024",
+                                    "matchDesc": "South Group",
+                                    "matchFormat": "T20",
+                                    "startDate": "1721325600000",
+                                    "endDate": "1721338200000",
+                                    "state": "Upcoming",
+                                    "status": "Match starts at Jul 18, 18:00 GMT",
+                                    "team1": {
+                                        "teamId": 119,
+                                        "teamName": "Somerset",
+                                        "teamSName": "SOM",
+                                        "imageId": 172199
+                                    },
+                                    "team2": {
+                                        "teamId": 41,
+                                        "teamName": "Sussex",
+                                        "teamSName": "SUS",
+                                        "imageId": 172148
+                                    },
+                                    "venueInfo": {
+                                        "id": 223,
+                                        "ground": "The Cooper Associates County Ground",
+                                        "city": "Taunton",
+                                        "timezone": "+01:00",
+                                        "latitude": "51.018913",
+                                        "longitude": "3.100894"
+                                    },
+                                    "seriesStartDt": "1717027200000",
+                                    "seriesEndDt": "1726444800000",
+                                    "isTimeAnnounced": true,
+                                    "stateTitle": "Upcoming Match"
+                                }
+                            },
+                            {
+                                "matchInfo": {
+                                    "matchId": 85141,
+                                    "seriesId": 7336,
+                                    "seriesName": "T20 Blast 2024",
+                                    "matchDesc": "South Group",
+                                    "matchFormat": "T20",
+                                    "startDate": "1721325600000",
+                                    "endDate": "1721338200000",
+                                    "state": "Upcoming",
+                                    "status": "Match starts at Jul 18, 18:00 GMT",
+                                    "team1": {
+                                        "teamId": 74,
+                                        "teamName": "Middlesex",
+                                        "teamSName": "MDX",
+                                        "imageId": 172170
+                                    },
+                                    "team2": {
+                                        "teamId": 151,
+                                        "teamName": "Gloucestershire",
+                                        "teamSName": "GLOUCS",
+                                        "imageId": 172218
+                                    },
+                                    "venueInfo": {
+                                        "id": 118,
+                                        "ground": "County Ground",
+                                        "city": "Chelmsford",
+                                        "timezone": "+01:00",
+                                        "latitude": "51.731580",
+                                        "longitude": "0.469004"
+                                    },
+                                    "seriesStartDt": "1717027200000",
+                                    "seriesEndDt": "1726444800000",
+                                    "isTimeAnnounced": true,
+                                    "stateTitle": "Upcoming Match"
+                                }
+                            },
+                            {
+                                "matchInfo": {
+                                    "matchId": 85148,
+                                    "seriesId": 7336,
+                                    "seriesName": "T20 Blast 2024",
+                                    "matchDesc": "South Group",
+                                    "matchFormat": "T20",
+                                    "startDate": "1721412000000",
+                                    "endDate": "1721424600000",
+                                    "state": "Upcoming",
+                                    "status": "Match starts at Jul 19, 18:00 GMT",
+                                    "team1": {
+                                        "teamId": 149,
+                                        "teamName": "Glamorgan",
+                                        "teamSName": "GLAM",
+                                        "imageId": 172216
+                                    },
+                                    "team2": {
+                                        "teamId": 119,
+                                        "teamName": "Somerset",
+                                        "teamSName": "SOM",
+                                        "imageId": 172199
+                                    },
+                                    "venueInfo": {
+                                        "id": 62,
+                                        "ground": "Sophia Gardens",
+                                        "city": "Cardiff",
+                                        "timezone": "+01:00",
+                                        "latitude": "51.484257",
+                                        "longitude": "-3.189187"
+                                    },
+                                    "seriesStartDt": "1717027200000",
+                                    "seriesEndDt": "1726444800000",
+                                    "isTimeAnnounced": true,
+                                    "stateTitle": "Upcoming Match"
+                                }
+                            },
+                            {
+                                "matchInfo": {
+                                    "matchId": 85155,
+                                    "seriesId": 7336,
+                                    "seriesName": "T20 Blast 2024",
+                                    "matchDesc": "North Group",
+                                    "matchFormat": "T20",
+                                    "startDate": "1721412000000",
+                                    "endDate": "1721424600000",
+                                    "state": "Upcoming",
+                                    "status": "Match starts at Jul 19, 18:00 GMT",
+                                    "team1": {
+                                        "teamId": 143,
+                                        "teamName": "Lancashire",
+                                        "teamSName": "LANCS",
+                                        "imageId": 172210
+                                    },
+                                    "team2": {
+                                        "teamId": 142,
+                                        "teamName": "Northamptonshire",
+                                        "teamSName": "NHNTS",
+                                        "imageId": 172209
+                                    },
+                                    "venueInfo": {
+                                        "id": 65,
+                                        "ground": "Emirates Old Trafford",
+                                        "city": "Manchester",
+                                        "timezone": "+01:00",
+                                        "latitude": "53.463066",
+                                        "longitude": "-2.291301"
+                                    },
+                                    "seriesStartDt": "1717027200000",
+                                    "seriesEndDt": "1726444800000",
+                                    "isTimeAnnounced": true,
+                                    "stateTitle": "Upcoming Match"
+                                }
+                            },
+                            {
+                                "matchInfo": {
+                                    "matchId": 85162,
+                                    "seriesId": 7336,
+                                    "seriesName": "T20 Blast 2024",
+                                    "matchDesc": "South Group",
+                                    "matchFormat": "T20",
+                                    "startDate": "1721412000000",
+                                    "endDate": "1721424600000",
+                                    "state": "Upcoming",
+                                    "status": "Match starts at Jul 19, 18:00 GMT",
+                                    "team1": {
+                                        "teamId": 41,
+                                        "teamName": "Sussex",
+                                        "teamSName": "SUS",
+                                        "imageId": 172148
+                                    },
+                                    "team2": {
+                                        "teamId": 74,
+                                        "teamName": "Middlesex",
+                                        "teamSName": "MDX",
+                                        "imageId": 172170
+                                    },
+                                    "venueInfo": {
+                                        "id": 292,
+                                        "ground": "County Ground",
+                                        "city": "Hove",
+                                        "timezone": "+01:00",
+                                        "latitude": "50.830995",
+                                        "longitude": "-0.163522"
+                                    },
+                                    "seriesStartDt": "1717027200000",
+                                    "seriesEndDt": "1726444800000",
+                                    "isTimeAnnounced": true,
+                                    "stateTitle": "Upcoming Match"
+                                }
+                            },
+                            {
+                                "matchInfo": {
+                                    "matchId": 85169,
+                                    "seriesId": 7336,
+                                    "seriesName": "T20 Blast 2024",
+                                    "matchDesc": "South Group",
+                                    "matchFormat": "T20",
+                                    "startDate": "1721412000000",
+                                    "endDate": "1721424600000",
+                                    "state": "Upcoming",
+                                    "status": "Match starts at Jul 19, 18:00 GMT",
+                                    "team1": {
+                                        "teamId": 153,
+                                        "teamName": "Hampshire",
+                                        "teamSName": "HAM",
+                                        "imageId": 172220
+                                    },
+                                    "team2": {
+                                        "teamId": 152,
+                                        "teamName": "Essex",
+                                        "teamSName": "ESS",
+                                        "imageId": 172219
+                                    },
+                                    "venueInfo": {
+                                        "id": 21,
+                                        "ground": "The Rose Bowl",
+                                        "city": "Southampton",
+                                        "timezone": "+01:00",
+                                        "latitude": "50.924131",
+                                        "longitude": "-1.322163"
+                                    },
+                                    "seriesStartDt": "1717027200000",
+                                    "seriesEndDt": "1726444800000",
+                                    "isTimeAnnounced": true,
+                                    "stateTitle": "Upcoming Match"
+                                }
+                            },
+                            {
+                                "matchInfo": {
+                                    "matchId": 85176,
+                                    "seriesId": 7336,
+                                    "seriesName": "T20 Blast 2024",
+                                    "matchDesc": "South Group",
+                                    "matchFormat": "T20",
+                                    "startDate": "1721412000000",
+                                    "endDate": "1721424600000",
+                                    "state": "Upcoming",
+                                    "status": "Match starts at Jul 19, 18:00 GMT",
+                                    "team1": {
+                                        "teamId": 150,
+                                        "teamName": "Kent",
+                                        "teamSName": "KENT",
+                                        "imageId": 172217
+                                    },
+                                    "team2": {
+                                        "teamId": 148,
+                                        "teamName": "Surrey",
+                                        "teamSName": "SUR",
+                                        "imageId": 172215
+                                    },
+                                    "venueInfo": {
+                                        "id": 67,
+                                        "ground": "St Lawrence Ground",
+                                        "city": "Canterbury",
+                                        "timezone": "+01:00",
+                                        "latitude": "51.267447",
+                                        "longitude": "1.091621"
+                                    },
+                                    "seriesStartDt": "1717027200000",
+                                    "seriesEndDt": "1726444800000",
+                                    "isTimeAnnounced": true,
+                                    "stateTitle": "Upcoming Match"
+                                }
+                            },
+                            {
+                                "matchInfo": {
+                                    "matchId": 85183,
+                                    "seriesId": 7336,
+                                    "seriesName": "T20 Blast 2024",
+                                    "matchDesc": "North Group",
+                                    "matchFormat": "T20",
+                                    "startDate": "1721412000000",
+                                    "endDate": "1721424600000",
+                                    "state": "Upcoming",
+                                    "status": "Match starts at Jul 19, 18:00 GMT",
+                                    "team1": {
+                                        "teamId": 146,
+                                        "teamName": "Yorkshire",
+                                        "teamSName": "YORKS",
+                                        "imageId": 172213
+                                    },
+                                    "team2": {
+                                        "teamId": 139,
+                                        "teamName": "Nottinghamshire",
+                                        "teamSName": "NOTTS",
+                                        "imageId": 172206
+                                    },
+                                    "venueInfo": {
+                                        "id": 66,
+                                        "ground": "Headingley",
+                                        "city": "Leeds",
+                                        "timezone": "+01:00",
+                                        "latitude": "53.817622",
+                                        "longitude": "-1.58211"
+                                    },
+                                    "seriesStartDt": "1717027200000",
+                                    "seriesEndDt": "1726444800000",
+                                    "isTimeAnnounced": true,
+                                    "stateTitle": "Upcoming Match"
+                                }
+                            },
+                            {
+                                "matchInfo": {
+                                    "matchId": 85197,
+                                    "seriesId": 7336,
+                                    "seriesName": "T20 Blast 2024",
+                                    "matchDesc": "North Group",
+                                    "matchFormat": "T20",
+                                    "startDate": "1721412000000",
+                                    "endDate": "1721424600000",
+                                    "state": "Upcoming",
+                                    "status": "Match starts at Jul 19, 18:00 GMT",
+                                    "team1": {
+                                        "teamId": 144,
+                                        "teamName": "Derbyshire",
+                                        "teamSName": "DERBY",
+                                        "imageId": 172211
+                                    },
+                                    "team2": {
+                                        "teamId": 141,
+                                        "teamName": "Durham",
+                                        "teamSName": "DUR",
+                                        "imageId": 172208
+                                    },
+                                    "venueInfo": {
+                                        "id": 226,
+                                        "ground": "County Ground",
+                                        "city": "Derby",
+                                        "timezone": "+01:00",
+                                        "latitude": "52.927517",
+                                        "longitude": "-1.461188"
+                                    },
+                                    "seriesStartDt": "1717027200000",
+                                    "seriesEndDt": "1726444800000",
+                                    "isTimeAnnounced": true,
+                                    "stateTitle": "Upcoming Match"
+                                }
+                            },
+                            {
+                                "matchInfo": {
+                                    "matchId": 95854,
+                                    "seriesId": 7336,
+                                    "seriesName": "T20 Blast 2024",
+                                    "matchDesc": "North Group",
+                                    "matchFormat": "T20",
+                                    "startDate": "1721412000000",
+                                    "endDate": "1721424600000",
+                                    "state": "Upcoming",
+                                    "status": "Match starts at Jul 19, 18:00 GMT",
+                                    "team1": {
+                                        "teamId": 140,
+                                        "teamName": "Warwickshire",
+                                        "teamSName": "WARKS",
+                                        "imageId": 172207
+                                    },
+                                    "team2": {
+                                        "teamId": 145,
+                                        "teamName": "Leicestershire",
+                                        "teamSName": "LEIC",
+                                        "imageId": 172212
+                                    },
+                                    "venueInfo": {
+                                        "id": 20,
+                                        "ground": "Edgbaston",
+                                        "city": "Birmingham",
+                                        "timezone": "+01:00",
+                                        "latitude": "52.455774",
+                                        "longitude": "-1.902624"
+                                    },
+                                    "seriesStartDt": "1717027200000",
+                                    "seriesEndDt": "1726444800000",
+                                    "isTimeAnnounced": true,
+                                    "stateTitle": "Upcoming Match"
+                                }
+                            }
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "matchType": "Domestic",
+            "seriesMatches": [
+                {
+                    "seriesAdWrapper": {
+                        "seriesId": 7343,
+                        "seriesName": "England Domestic One-Day Cup 2024",
+                        "matches": [
+                            {
+                                "matchInfo": {
+                                    "matchId": 83895,
+                                    "seriesId": 7343,
+                                    "seriesName": "England Domestic One-Day Cup 2024",
+                                    "matchDesc": "Group A",
+                                    "matchFormat": "ODI",
+                                    "startDate": "1721815200000",
+                                    "endDate": "1721844000000",
+                                    "state": "Upcoming",
+                                    "status": "Match starts at Jul 24, 10:00 GMT",
+                                    "team1": {
+                                        "teamId": 142,
+                                        "teamName": "Northamptonshire",
+                                        "teamSName": "NHNTS",
+                                        "imageId": 172209
+                                    },
+                                    "team2": {
+                                        "teamId": 144,
+                                        "teamName": "Derbyshire",
+                                        "teamSName": "DERBY",
+                                        "imageId": 172211
+                                    },
+                                    "venueInfo": {
+                                        "id": 119,
+                                        "ground": "County Ground",
+                                        "city": "Northampton",
+                                        "timezone": "+01:00",
+                                        "latitude": "52.248160",
+                                        "longitude": "-0.871060"
+                                    },
+                                    "seriesStartDt": "1721779200000",
+                                    "seriesEndDt": "1727136000000",
+                                    "isTimeAnnounced": true,
+                                    "stateTitle": "Upcoming Match"
+                                }
+                            },
+                            {
+                                "matchInfo": {
+                                    "matchId": 83902,
+                                    "seriesId": 7343,
+                                    "seriesName": "England Domestic One-Day Cup 2024",
+                                    "matchDesc": "Group A",
+                                    "matchFormat": "ODI",
+                                    "startDate": "1721815200000",
+                                    "endDate": "1721844000000",
+                                    "state": "Upcoming",
+                                    "status": "Match starts at Jul 24, 10:00 GMT",
+                                    "team1": {
+                                        "teamId": 147,
+                                        "teamName": "Worcestershire",
+                                        "teamSName": "WORCS",
+                                        "imageId": 172214
+                                    },
+                                    "team2": {
+                                        "teamId": 74,
+                                        "teamName": "Middlesex",
+                                        "teamSName": "MDX",
+                                        "imageId": 172170
+                                    },
+                                    "venueInfo": {
+                                        "id": 225,
+                                        "ground": "New Road",
+                                        "city": "Worcester",
+                                        "timezone": "+01:00",
+                                        "latitude": "52.189294",
+                                        "longitude": "-2.2268"
+                                    },
+                                    "seriesStartDt": "1721779200000",
+                                    "seriesEndDt": "1727136000000",
+                                    "isTimeAnnounced": true,
+                                    "stateTitle": "Upcoming Match"
+                                }
+                            },
+                            {
+                                "matchInfo": {
+                                    "matchId": 83909,
+                                    "seriesId": 7343,
+                                    "seriesName": "England Domestic One-Day Cup 2024",
+                                    "matchDesc": "Group A",
+                                    "matchFormat": "ODI",
+                                    "startDate": "1721815200000",
+                                    "endDate": "1721844000000",
+                                    "state": "Upcoming",
+                                    "status": "Match starts at Jul 24, 10:00 GMT",
+                                    "team1": {
+                                        "teamId": 143,
+                                        "teamName": "Lancashire",
+                                        "teamSName": "LANCS",
+                                        "imageId": 172210
+                                    },
+                                    "team2": {
+                                        "teamId": 141,
+                                        "teamName": "Durham",
+                                        "teamSName": "DUR",
+                                        "imageId": 172208
+                                    },
+                                    "venueInfo": {
+                                        "id": 568,
+                                        "ground": "Sedbergh School Ground",
+                                        "city": "Sedbergh",
+                                        "timezone": "+01:00",
+                                        "latitude": "54.323559",
+                                        "longitude": "-2.528300"
+                                    },
+                                    "seriesStartDt": "1721779200000",
+                                    "seriesEndDt": "1727136000000",
+                                    "isTimeAnnounced": true,
+                                    "stateTitle": "Upcoming Match"
+                                }
+                            },
+                            {
+                                "matchInfo": {
+                                    "matchId": 83916,
+                                    "seriesId": 7343,
+                                    "seriesName": "England Domestic One-Day Cup 2024",
+                                    "matchDesc": "Group B",
+                                    "matchFormat": "ODI",
+                                    "startDate": "1721815200000",
+                                    "endDate": "1721844000000",
+                                    "state": "Upcoming",
+                                    "status": "Match starts at Jul 24, 10:00 GMT",
+                                    "team1": {
+                                        "teamId": 145,
+                                        "teamName": "Leicestershire",
+                                        "teamSName": "LEIC",
+                                        "imageId": 172212
+                                    },
+                                    "team2": {
+                                        "teamId": 139,
+                                        "teamName": "Nottinghamshire",
+                                        "teamSName": "NOTTS",
+                                        "imageId": 172206
+                                    },
+                                    "venueInfo": {
+                                        "id": 222,
+                                        "ground": "Grace Road",
+                                        "city": "Leicester",
+                                        "timezone": "+01:00",
+                                        "latitude": "52.607861",
+                                        "longitude": "-1.142709"
+                                    },
+                                    "seriesStartDt": "1721779200000",
+                                    "seriesEndDt": "1727136000000",
+                                    "isTimeAnnounced": true,
+                                    "stateTitle": "Upcoming Match"
+                                }
+                            },
+                            {
+                                "matchInfo": {
+                                    "matchId": 83923,
+                                    "seriesId": 7343,
+                                    "seriesName": "England Domestic One-Day Cup 2024",
+                                    "matchDesc": "Group A",
+                                    "matchFormat": "ODI",
+                                    "startDate": "1721815200000",
+                                    "endDate": "1721844000000",
+                                    "state": "Upcoming",
+                                    "status": "Match starts at Jul 24, 10:00 GMT",
+                                    "team1": {
+                                        "teamId": 152,
+                                        "teamName": "Essex",
+                                        "teamSName": "ESS",
+                                        "imageId": 172219
+                                    },
+                                    "team2": {
+                                        "teamId": 140,
+                                        "teamName": "Warwickshire",
+                                        "teamSName": "WARKS",
+                                        "imageId": 172207
+                                    },
+                                    "venueInfo": {
+                                        "id": 118,
+                                        "ground": "County Ground",
+                                        "city": "Chelmsford",
+                                        "timezone": "+01:00",
+                                        "latitude": "51.731580",
+                                        "longitude": "0.469004"
+                                    },
+                                    "seriesStartDt": "1721779200000",
+                                    "seriesEndDt": "1727136000000",
+                                    "isTimeAnnounced": true,
+                                    "stateTitle": "Upcoming Match"
+                                }
+                            }
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "matchType": "Women",
+            "seriesMatches": [
+                {
+                    "seriesAdWrapper": {
+                        "seriesId": 7765,
+                        "seriesName": "Womens Asia Cup T20, 2024",
+                        "matches": [
+                            {
+                                "matchInfo": {
+                                    "matchId": 91911,
+                                    "seriesId": 7765,
+                                    "seriesName": "Womens Asia Cup T20, 2024",
+                                    "matchDesc": "1st Match, Group A",
+                                    "matchFormat": "T20",
+                                    "startDate": "1721377800000",
+                                    "endDate": "1721390400000",
+                                    "state": "Upcoming",
+                                    "status": "Match starts at Jul 19, 08:30 GMT",
+                                    "team1": {
+                                        "teamId": 449,
+                                        "teamName": "United Arab Emirates Women",
+                                        "teamSName": "UAEW",
+                                        "imageId": 252369
+                                    },
+                                    "team2": {
+                                        "teamId": 383,
+                                        "teamName": "Nepal Women",
+                                        "teamSName": "NEPW",
+                                        "imageId": 172436
+                                    },
+                                    "venueInfo": {
+                                        "id": 13,
+                                        "ground": "Rangiri Dambulla International Stadium",
+                                        "city": "Dambulla",
+                                        "timezone": "+05:30",
+                                        "latitude": "7.859556",
+                                        "longitude": "80.634026"
+                                    },
+                                    "seriesStartDt": "1721347200000",
+                                    "seriesEndDt": "1722297600000",
+                                    "isTimeAnnounced": true,
+                                    "stateTitle": "Upcoming Match"
+                                }
+                            },
+                            {
+                                "matchInfo": {
+                                    "matchId": 91915,
+                                    "seriesId": 7765,
+                                    "seriesName": "Womens Asia Cup T20, 2024",
+                                    "matchDesc": "2nd Match, Group A",
+                                    "matchFormat": "T20",
+                                    "startDate": "1721395800000",
+                                    "endDate": "1721408400000",
+                                    "state": "Upcoming",
+                                    "status": "Match starts at Jul 19, 13:30 GMT",
+                                    "team1": {
+                                        "teamId": 97,
+                                        "teamName": "India Women",
+                                        "teamSName": "INDW",
+                                        "imageId": 172189
+                                    },
+                                    "team2": {
+                                        "teamId": 259,
+                                        "teamName": "Pakistan Women",
+                                        "teamSName": "PAKW",
+                                        "imageId": 172312
+                                    },
+                                    "venueInfo": {
+                                        "id": 13,
+                                        "ground": "Rangiri Dambulla International Stadium",
+                                        "city": "Dambulla",
+                                        "timezone": "+05:30",
+                                        "latitude": "7.859556",
+                                        "longitude": "80.634026"
+                                    },
+                                    "seriesStartDt": "1721347200000",
+                                    "seriesEndDt": "1722297600000",
+                                    "isTimeAnnounced": true,
+                                    "stateTitle": "Upcoming Match"
+                                }
+                            },
+                            {
+                                "matchInfo": {
+                                    "matchId": 91924,
+                                    "seriesId": 7765,
+                                    "seriesName": "Womens Asia Cup T20, 2024",
+                                    "matchDesc": "3rd Match, Group B",
+                                    "matchFormat": "T20",
+                                    "startDate": "1721464200000",
+                                    "endDate": "1721476800000",
+                                    "state": "Upcoming",
+                                    "status": "Match starts at Jul 20, 04:00 GMT",
+                                    "team1": {
+                                        "teamId": 445,
+                                        "teamName": "Malaysia Women",
+                                        "teamSName": "MLYW",
+                                        "imageId": 172493
+                                    },
+                                    "team2": {
+                                        "teamId": 382,
+                                        "teamName": "Thailand Women",
+                                        "teamSName": "THAIW",
+                                        "imageId": 172435
+                                    },
+                                    "venueInfo": {
+                                        "id": 13,
+                                        "ground": "Rangiri Dambulla International Stadium",
+                                        "city": "Dambulla",
+                                        "timezone": "+05:30",
+                                        "latitude": "7.859556",
+                                        "longitude": "80.634026"
+                                    },
+                                    "seriesStartDt": "1721347200000",
+                                    "seriesEndDt": "1722297600000",
+                                    "isTimeAnnounced": true,
+                                    "stateTitle": "Upcoming Match"
+                                }
+                            },
+                            {
+                                "matchInfo": {
+                                    "matchId": 91933,
+                                    "seriesId": 7765,
+                                    "seriesName": "Womens Asia Cup T20, 2024",
+                                    "matchDesc": "4th Match, Group B",
+                                    "matchFormat": "T20",
+                                    "startDate": "1721482200000",
+                                    "endDate": "1721494800000",
+                                    "state": "Upcoming",
+                                    "status": "Match starts at Jul 20, 08:30 GMT",
+                                    "team1": {
+                                        "teamId": 258,
+                                        "teamName": "Sri Lanka Women",
+                                        "teamSName": "SLW",
+                                        "imageId": 172311
+                                    },
+                                    "team2": {
+                                        "teamId": 329,
+                                        "teamName": "Bangladesh Women",
+                                        "teamSName": "BANW",
+                                        "imageId": 172377
+                                    },
+                                    "venueInfo": {
+                                        "id": 13,
+                                        "ground": "Rangiri Dambulla International Stadium",
+                                        "city": "Dambulla",
+                                        "timezone": "+05:30",
+                                        "latitude": "7.859556",
+                                        "longitude": "80.634026"
+                                    },
+                                    "seriesStartDt": "1721347200000",
+                                    "seriesEndDt": "1722297600000",
+                                    "isTimeAnnounced": true,
+                                    "stateTitle": "Upcoming Match"
+                                }
+                            },
+                            {
+                                "matchInfo": {
+                                    "matchId": 91942,
+                                    "seriesId": 7765,
+                                    "seriesName": "Womens Asia Cup T20, 2024",
+                                    "matchDesc": "5th Match, Group A",
+                                    "matchFormat": "T20",
+                                    "startDate": "1721550600000",
+                                    "endDate": "1721563200000",
+                                    "state": "Upcoming",
+                                    "status": "Match starts at Jul 21, 08:30 GMT",
+                                    "team1": {
+                                        "teamId": 97,
+                                        "teamName": "India Women",
+                                        "teamSName": "INDW",
+                                        "imageId": 172189
+                                    },
+                                    "team2": {
+                                        "teamId": 449,
+                                        "teamName": "United Arab Emirates Women",
+                                        "teamSName": "UAEW",
+                                        "imageId": 252369
+                                    },
+                                    "venueInfo": {
+                                        "id": 13,
+                                        "ground": "Rangiri Dambulla International Stadium",
+                                        "city": "Dambulla",
+                                        "timezone": "+05:30",
+                                        "latitude": "7.859556",
+                                        "longitude": "80.634026"
+                                    },
+                                    "seriesStartDt": "1721347200000",
+                                    "seriesEndDt": "1722297600000",
+                                    "isTimeAnnounced": true,
+                                    "stateTitle": "Upcoming Match"
+                                }
+                            },
+                            {
+                                "matchInfo": {
+                                    "matchId": 91947,
+                                    "seriesId": 7765,
+                                    "seriesName": "Womens Asia Cup T20, 2024",
+                                    "matchDesc": "6th Match, Group A",
+                                    "matchFormat": "T20",
+                                    "startDate": "1721568600000",
+                                    "endDate": "1721581200000",
+                                    "state": "Upcoming",
+                                    "status": "Match starts at Jul 21, 13:30 GMT",
+                                    "team1": {
+                                        "teamId": 259,
+                                        "teamName": "Pakistan Women",
+                                        "teamSName": "PAKW",
+                                        "imageId": 172312
+                                    },
+                                    "team2": {
+                                        "teamId": 383,
+                                        "teamName": "Nepal Women",
+                                        "teamSName": "NEPW",
+                                        "imageId": 172436
+                                    },
+                                    "venueInfo": {
+                                        "id": 13,
+                                        "ground": "Rangiri Dambulla International Stadium",
+                                        "city": "Dambulla",
+                                        "timezone": "+05:30",
+                                        "latitude": "7.859556",
+                                        "longitude": "80.634026"
+                                    },
+                                    "seriesStartDt": "1721347200000",
+                                    "seriesEndDt": "1722297600000",
+                                    "isTimeAnnounced": true,
+                                    "stateTitle": "Upcoming Match"
+                                }
+                            },
+                            {
+                                "matchInfo": {
+                                    "matchId": 91956,
+                                    "seriesId": 7765,
+                                    "seriesName": "Womens Asia Cup T20, 2024",
+                                    "matchDesc": "7th Match, Group B",
+                                    "matchFormat": "T20",
+                                    "startDate": "1721637000000",
+                                    "endDate": "1721649600000",
+                                    "state": "Upcoming",
+                                    "status": "Match starts at Jul 22, 04:00 GMT",
+                                    "team1": {
+                                        "teamId": 258,
+                                        "teamName": "Sri Lanka Women",
+                                        "teamSName": "SLW",
+                                        "imageId": 172311
+                                    },
+                                    "team2": {
+                                        "teamId": 445,
+                                        "teamName": "Malaysia Women",
+                                        "teamSName": "MLYW",
+                                        "imageId": 172493
+                                    },
+                                    "venueInfo": {
+                                        "id": 13,
+                                        "ground": "Rangiri Dambulla International Stadium",
+                                        "city": "Dambulla",
+                                        "timezone": "+05:30",
+                                        "latitude": "7.859556",
+                                        "longitude": "80.634026"
+                                    },
+                                    "seriesStartDt": "1721347200000",
+                                    "seriesEndDt": "1722297600000",
+                                    "isTimeAnnounced": true,
+                                    "stateTitle": "Upcoming Match"
+                                }
+                            },
+                            {
+                                "matchInfo": {
+                                    "matchId": 91960,
+                                    "seriesId": 7765,
+                                    "seriesName": "Womens Asia Cup T20, 2024",
+                                    "matchDesc": "8th Match, Group B",
+                                    "matchFormat": "T20",
+                                    "startDate": "1721655000000",
+                                    "endDate": "1721667600000",
+                                    "state": "Upcoming",
+                                    "status": "Match starts at Jul 22, 08:30 GMT",
+                                    "team1": {
+                                        "teamId": 329,
+                                        "teamName": "Bangladesh Women",
+                                        "teamSName": "BANW",
+                                        "imageId": 172377
+                                    },
+                                    "team2": {
+                                        "teamId": 382,
+                                        "teamName": "Thailand Women",
+                                        "teamSName": "THAIW",
+                                        "imageId": 172435
+                                    },
+                                    "venueInfo": {
+                                        "id": 13,
+                                        "ground": "Rangiri Dambulla International Stadium",
+                                        "city": "Dambulla",
+                                        "timezone": "+05:30",
+                                        "latitude": "7.859556",
+                                        "longitude": "80.634026"
+                                    },
+                                    "seriesStartDt": "1721347200000",
+                                    "seriesEndDt": "1722297600000",
+                                    "isTimeAnnounced": true,
+                                    "stateTitle": "Upcoming Match"
+                                }
+                            },
+                            {
+                                "matchInfo": {
+                                    "matchId": 91969,
+                                    "seriesId": 7765,
+                                    "seriesName": "Womens Asia Cup T20, 2024",
+                                    "matchDesc": "9th Match, Group A",
+                                    "matchFormat": "T20",
+                                    "startDate": "1721723400000",
+                                    "endDate": "1721736000000",
+                                    "state": "Upcoming",
+                                    "status": "Match starts at Jul 23, 04:00 GMT",
+                                    "team1": {
+                                        "teamId": 259,
+                                        "teamName": "Pakistan Women",
+                                        "teamSName": "PAKW",
+                                        "imageId": 172312
+                                    },
+                                    "team2": {
+                                        "teamId": 449,
+                                        "teamName": "United Arab Emirates Women",
+                                        "teamSName": "UAEW",
+                                        "imageId": 252369
+                                    },
+                                    "venueInfo": {
+                                        "id": 13,
+                                        "ground": "Rangiri Dambulla International Stadium",
+                                        "city": "Dambulla",
+                                        "timezone": "+05:30",
+                                        "latitude": "7.859556",
+                                        "longitude": "80.634026"
+                                    },
+                                    "seriesStartDt": "1721347200000",
+                                    "seriesEndDt": "1722297600000",
+                                    "isTimeAnnounced": true,
+                                    "stateTitle": "Upcoming Match"
+                                }
+                            },
+                            {
+                                "matchInfo": {
+                                    "matchId": 91974,
+                                    "seriesId": 7765,
+                                    "seriesName": "Womens Asia Cup T20, 2024",
+                                    "matchDesc": "10th Match, Group A",
+                                    "matchFormat": "T20",
+                                    "startDate": "1721741400000",
+                                    "endDate": "1721754000000",
+                                    "state": "Upcoming",
+                                    "status": "Match starts at Jul 23, 08:30 GMT",
+                                    "team1": {
+                                        "teamId": 97,
+                                        "teamName": "India Women",
+                                        "teamSName": "INDW",
+                                        "imageId": 172189
+                                    },
+                                    "team2": {
+                                        "teamId": 383,
+                                        "teamName": "Nepal Women",
+                                        "teamSName": "NEPW",
+                                        "imageId": 172436
+                                    },
+                                    "venueInfo": {
+                                        "id": 13,
+                                        "ground": "Rangiri Dambulla International Stadium",
+                                        "city": "Dambulla",
+                                        "timezone": "+05:30",
+                                        "latitude": "7.859556",
+                                        "longitude": "80.634026"
+                                    },
+                                    "seriesStartDt": "1721347200000",
+                                    "seriesEndDt": "1722297600000",
+                                    "isTimeAnnounced": true,
+                                    "stateTitle": "Upcoming Match"
+                                }
+                            },
+                            {
+                                "matchInfo": {
+                                    "matchId": 91978,
+                                    "seriesId": 7765,
+                                    "seriesName": "Womens Asia Cup T20, 2024",
+                                    "matchDesc": "11th Match, Group B",
+                                    "matchFormat": "T20",
+                                    "startDate": "1721809800000",
+                                    "endDate": "1721822400000",
+                                    "state": "Upcoming",
+                                    "status": "Match starts at Jul 24, 04:00 GMT",
+                                    "team1": {
+                                        "teamId": 329,
+                                        "teamName": "Bangladesh Women",
+                                        "teamSName": "BANW",
+                                        "imageId": 172377
+                                    },
+                                    "team2": {
+                                        "teamId": 445,
+                                        "teamName": "Malaysia Women",
+                                        "teamSName": "MLYW",
+                                        "imageId": 172493
+                                    },
+                                    "venueInfo": {
+                                        "id": 13,
+                                        "ground": "Rangiri Dambulla International Stadium",
+                                        "city": "Dambulla",
+                                        "timezone": "+05:30",
+                                        "latitude": "7.859556",
+                                        "longitude": "80.634026"
+                                    },
+                                    "seriesStartDt": "1721347200000",
+                                    "seriesEndDt": "1722297600000",
+                                    "isTimeAnnounced": true,
+                                    "stateTitle": "Upcoming Match"
+                                }
+                            }
+                        ]
+                    }
+                },
+                {
+                    "seriesAdWrapper": {
+                        "seriesId": 7532,
+                        "seriesName": "The Hundred Womens Competition 2024",
+                        "matches": [
+                            {
+                                "matchInfo": {
+                                    "matchId": 88734,
+                                    "seriesId": 7532,
+                                    "seriesName": "The Hundred Womens Competition 2024",
+                                    "matchDesc": "1st Match",
+                                    "matchFormat": "HUN",
+                                    "startDate": "1721745900000",
+                                    "endDate": "1706186526000",
+                                    "state": "Upcoming",
+                                    "status": "Match starts at Jul 23, 14:45 GMT",
+                                    "team1": {
+                                        "teamId": 613,
+                                        "teamName": "Oval Invincibles Women",
+                                        "teamSName": "OVLW",
+                                        "imageId": 202714
+                                    },
+                                    "team2": {
+                                        "teamId": 615,
+                                        "teamName": "Birmingham Phoenix Women",
+                                        "teamSName": "BRMW",
+                                        "imageId": 202716
+                                    },
+                                    "venueInfo": {
+                                        "id": 12,
+                                        "ground": "Kennington Oval",
+                                        "city": "London",
+                                        "timezone": "+01:00",
+                                        "latitude": "51.48368",
+                                        "longitude": "-0.114885"
+                                    },
+                                    "seriesStartDt": "1721692800000",
+                                    "seriesEndDt": "1724112000000",
+                                    "isTimeAnnounced": true,
+                                    "stateTitle": "Upcoming Match"
+                                }
+                            }
+                        ]
+                    }
+                },
+                {
+                    "seriesAdWrapper": {
+                        "seriesId": 6808,
+                        "seriesName": "New Zealand Women tour of England, 2024",
+                        "matches": [
+                            {
+                                "matchInfo": {
+                                    "matchId": 76675,
+                                    "seriesId": 6808,
+                                    "seriesName": "New Zealand Women tour of England, 2024",
+                                    "matchDesc": "5th T20I",
+                                    "matchFormat": "T20",
+                                    "startDate": "1721235600000",
+                                    "endDate": "1721248200000",
+                                    "state": "Preview",
+                                    "status": "Match starts at Jul 17, 17:00 GMT",
+                                    "team1": {
+                                        "teamId": 99,
+                                        "teamName": "England Women",
+                                        "teamSName": "ENGW",
+                                        "imageId": 172191
+                                    },
+                                    "team2": {
+                                        "teamId": 98,
+                                        "teamName": "New Zealand Women",
+                                        "teamSName": "NZW",
+                                        "imageId": 172190
+                                    },
+                                    "venueInfo": {
+                                        "id": 19,
+                                        "ground": "Lord's",
+                                        "city": "London",
+                                        "timezone": "+01:00",
+                                        "latitude": "51.529488",
+                                        "longitude": "-0.172926"
+                                    },
+                                    "seriesStartDt": "1719360000000",
+                                    "seriesEndDt": "1721347200000",
+                                    "isTimeAnnounced": true,
+                                    "stateTitle": "Preview"
+                                }
+                            }
+                        ]
+                    }
+                }
+            ]
+        }
+    ],
+    "filters": {
+        "matchType": [
+            "International",
+            "League",
+            "Domestic",
+            "Women"
+        ]
+    },
+    "appIndex": {
+        "seoTitle": "Live Cricket Score - Scorecard and Match Results",
+        "webURL": "www.cricbuzz.com/live-cricket-scores/"
+    },
+    "responseLastUpdated": "1721218574"
+}

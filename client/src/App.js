@@ -10,6 +10,7 @@ import ContestPage from './pages/contest';
 import TeamPage from './pages/team_page';
 import MyMatches from './pages/mymatches';
 import MyTeam from './pages/my_teams';
+import Matches from './components/matches';
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
             <Route path="/team_page" element={<TeamPage />} />
             <Route path="/mymatches" element={<MyMatches />} />
             <Route path="/my_teams" element={<MyTeam />} />
+            <Route path="/matches" element={<Matches />} />
           </Routes>
         </Router>
       </div>

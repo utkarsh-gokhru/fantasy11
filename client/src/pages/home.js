@@ -83,7 +83,6 @@ function MatchCard(props) {
 
     req.end();
   };
-  
 
   return (
     <div onClick={() => getScAndNavigate(matchId)} className={styles.card}>
