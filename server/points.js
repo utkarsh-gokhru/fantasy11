@@ -2,8 +2,8 @@ import https from 'https';
 
 export function calculateBatterPoints(batter) {
   const runsPoints = batter.runs - batter.fours * 4 - batter.sixes * 6;
-  const foursPoints = batter.fours * 4;
-  const sixesPoints = batter.sixes * 6;
+  const foursPoints = batter.fours * 8;
+  const sixesPoints = batter.sixes * 12;
   return runsPoints + foursPoints + sixesPoints;
 }
 

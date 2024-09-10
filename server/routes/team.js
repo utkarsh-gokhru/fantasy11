@@ -10,7 +10,7 @@ router.post('/create', async (req, res) => {
 
     const playersToStore = selectedPlayers.map((player) => ({
       id: player.id,
-      name: player.name,
+      name: player.fullName,
     }));
 
     const team = new TeamModel({

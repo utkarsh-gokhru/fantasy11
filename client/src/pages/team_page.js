@@ -25,14 +25,16 @@ const PlayerCard = ({ player, isSelected, onSelect, onDeselect }) => {
     }
   };
 
-  return (
-    <div className={`player-card ${isSelected ? 'selected' : ''}`} onClick={handleSelect}>
-      <h2>{fullName}</h2>
-      <p>Role: {role}</p>
-      <p>Bowling Style: {bowlingStyle || 'N/A'}</p>
-      <p>Batting Style: {battingStyle || 'N/A'}</p>
-    </div>
-  );
+  if(!role.toLowerCase().includes('coach')  && !role.toLowerCase().includes('manager')){
+    return (
+      <div className={`player-card ${isSelected ? 'selected' : ''}`} onClick={handleSelect}>
+        <h2>{fullName}</h2>
+        <p>Role: {role}</p>
+        <p>Bowling Style: {bowlingStyle || 'N/A'}</p>
+        <p>Batting Style: {battingStyle || 'N/A'}</p>
+      </div>
+    );
+  }
 };
 
 const TeamPage = () => {
@@ -50,6 +52,13 @@ const TeamPage = () => {
   const [team1Data, setTeam1Data] = useState({});
   const [team2Data, setTeam2Data] = useState({});
   const [squadError, setSquadError] = useState(false);
+  const [open, setOpen] = useState(false);
+  const [cardno, setCardno] = useState('');
+  const [cvv, setCvv] = useState('');
+  const [selectedPlayers, setSelectedPlayers] = useState([]);
+  const [captain, setCaptain] = useState("");
+  const [viceCaptain, setViceCaptain] = useState("");
+  const [loading, setLoading] = useState(true);
 
   const fetchTeam = async (teamId, setTeamData) => {
     const options = {
@@ -70,22 +79,24 @@ const TeamPage = () => {
   };
 
   useEffect(() => {
-    fetchTeam(team1Id, setTeam1Data);
-  }, []);
+    const fetchAllTeams = async () => {
+      await Promise.all([fetchTeam(team1Id, setTeam1Data), fetchTeam(team2Id, setTeam2Data)]);
+      setLoading(false); // Set loading to false once both teams are fetched
+    };
 
-  useEffect(() => {
-    fetchTeam(team2Id, setTeam2Data);
+    fetchAllTeams();
   }, []);
 
   const players1 = team1Data.players ? team1Data.players.Squad : [];
   const players2 = team2Data.players ? team2Data.players.Squad : [];
 
-  const [open, setOpen] = useState(false);
-  const [cardno, setCardno] = useState('');
-  const [cvv, setCvv] = useState('');
-  const [selectedPlayers, setSelectedPlayers] = useState([]);
-  const [captain, setCaptain] = useState("");
-  const [viceCaptain, setViceCaptain] = useState("");
+  if (loading) {
+    return <h2>Loading...</h2>;
+  }
+
+  if(players1.length===0 || players2.length===0){
+    return (<h2>Squads not announced yet</h2>)
+  }
 
   const handleSelect = (playerId, playerName) => {
     if (selectedPlayers.length < 11) {
@@ -150,6 +161,8 @@ const TeamPage = () => {
         captain: captain,
         viceCaptain: viceCaptain,
       };
+
+      console.log(teamData);
 
       axios.post("http://localhost:3001/team_page/create", teamData)
         .then(() => {

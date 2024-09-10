@@ -92,7 +92,7 @@ router.get('/leaderboard', async (req, res) => {
             await player_data.save();
             await user_data.save();
         } else {
-            console.log('Data already exists for matchId and contestId:', matchId, contestId);
+            // console.log('Data already exists for matchId and contestId:', matchId, contestId);
         }
 
         res.status(200).json({sortedUserPoints,finalPlayersWithPoints});
