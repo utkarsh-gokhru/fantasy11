@@ -1,5 +1,4 @@
 import React from 'react';
-import './App.css';
 import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
 import Home from './pages/home';
 import { Auth } from './pages/auth';
@@ -11,6 +10,8 @@ import TeamPage from './pages/team_page';
 import MyMatches from './pages/mymatches';
 import MyTeam from './pages/my_teams';
 import Matches from './components/matches';
+import "../src/global.css"
+import { GoogleOAuthProvider } from '@react-oauth/google';
 
 function App() {
   return (

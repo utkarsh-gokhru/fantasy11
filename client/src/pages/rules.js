@@ -25,7 +25,7 @@ export const CreateRecepie = () => {
           <Typography>
           <h1>Batting points</h1>
             <ul>
-                <li className="row"><span>Run</span> <span className="box ">+1</span>  </li>    
+                <li className="row"><span className="text-3xl">Run</span> <span className="box ">+1</span>  </li>    
                 <li className="row"> <span>Boundary Bonus  </span>  <span className="box">  +1 </span>  </li>
                 <li className="row"> <span> Six Bonus   </span>     <span className="box"> +2</span>    </li>
                 <li className="row"> <span> Half-Century Bonus</span>  <span className="box"> +8</span> </li>
