@@ -194,23 +194,26 @@ const Terms = () => (
   </p>
 );
 
-const SplashButton = ({ children, className, ...rest }) => (
-  <button
-    className={twMerge(
-      "rounded-md bg-gradient-to-br from-blue-400 to-blue-700 px-4 py-2 text-lg text-zinc-50 ring-2 ring-blue-500/50 ring-offset-2 ring-offset-zinc-950 transition-all hover:scale-[1.02] hover:ring-transparent active:scale-[0.98] active:ring-blue-500/70",
-      className
-    )}
-    {...rest}
-  >
-    {children}
-  </button>
-);
+const SplashButton = ({ children, className, ...rest }) => {
+  return (
+    <button
+      className={twMerge(
+        "rounded-md bg-gradient-to-br from-blue-400 to-blue-700 px-4 py-2 text-lg text-zinc-50 ring-2 ring-blue-500/50 ring-offset-2 ring-offset-zinc-950 transition-all hover:scale-[1.02] hover:ring-transparent active:scale-[0.98] active:ring-blue-500/70",
+        className
+      )}
+      {...rest}
+    >
+      {children}
+    </button>
+  );
+};
 
 const BubbleButton = ({ children, className, ...rest }) => {
   return (
     <button
       className={twMerge(
-        `relative z-0 flex items-center gap-2 overflow-hidden whitespace-nowrap rounded-md 
+        `
+        relative z-0 flex items-center gap-2 overflow-hidden whitespace-nowrap rounded-md 
         border border-zinc-700 bg-gradient-to-br from-zinc-800 to-zinc-950
         px-3 py-1.5
         text-zinc-50 transition-all duration-300
@@ -238,9 +241,17 @@ const CornerGrid = () => {
   return (
     <div
       style={{
-        backgroundImage: `url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32' width='32' height='32' fill='none' stroke-width='2' stroke='rgb(30 58 138 / 0.5)'%3e%3cpath d='M0 0h8v8H0zM24 0h8v8h-8zM0 24h8v8H0zM24 24h8v8h-8z'%3e%3c/path%3e%3c/svg%3e")`,
+        backgroundImage: `url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32' width='32' height='32' fill='none' stroke-width='2' stroke='rgb(30 58 138 / 0.5)'%3e%3cpath d='M0 .5H31.5V32'/%3e%3c/svg%3e")`,
       }}
-      className="absolute inset-0 z-0 grid grid-cols-2 grid-rows-2 overflow-hidden opacity-20"
-    />
+      className="absolute right-0 top-0 z-0 size-[50vw]"
+    >
+      <div
+        style={{
+          backgroundImage:
+            "radial-gradient(100% 100% at 100% 0%, rgba(9,9,11,0), rgba(9,9,11,1))",
+        }}
+        className="absolute inset-0"
+      />
+    </div>
   );
 };

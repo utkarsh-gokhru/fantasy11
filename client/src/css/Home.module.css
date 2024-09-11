@@ -1,8 +1,10 @@
 .match-cards-container {
-  display: flex;
+  margin-left: 300px;
+  display: flex ;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
+  width: 100vh;
 }
 
 .card {

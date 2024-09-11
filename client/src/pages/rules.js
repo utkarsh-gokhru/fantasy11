@@ -1,94 +1,170 @@
-import React from "react";
-import "../css/style.css";
-import Accordion from '@mui/material/Accordion';
-import AccordionSummary from '@mui/material/AccordionSummary';
-import AccordionDetails from '@mui/material/AccordionDetails';
-import Typography from '@mui/material/Typography';
-import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
+import { useState } from "react";
+import { FiArrowRight } from "react-icons/fi";
+import { AnimatePresence, motion } from "framer-motion";
 
 export const CreateRecepie = () => {
-    return( 
-    <div className="rule-page">
-        <div className="bat">
-       
-        <img  className= "vk"
-        src= "https://d13ir53smqqeyp.cloudfront.net/d11-static-pages/static-content/images/battingpoints.png" alt= "Batting"></img>
-       <Accordion>
-        <AccordionSummary
-          expandIcon={<ExpandMoreIcon />}
-          aria-controls="panel1a-content"
-          id="panel1a-header"
-        >
-          <Typography>Batting Rules</Typography>
-        </AccordionSummary>
-        <AccordionDetails>
-          <Typography>
-          <h1>Batting points</h1>
-            <ul>
-                <li className="row"><span className="text-3xl">Run</span> <span className="box ">+1</span>  </li>    
-                <li className="row"> <span>Boundary Bonus  </span>  <span className="box">  +1 </span>  </li>
-                <li className="row"> <span> Six Bonus   </span>     <span className="box"> +2</span>    </li>
-                <li className="row"> <span> Half-Century Bonus</span>  <span className="box"> +8</span> </li>
-                <li className="row"> <span> Century Bonus</span> <span className="box">16</span>    </li>
-                <li className="row"> <span> Dismical for a duck</span>  <span className="box"> -2</span></li>
-            </ul>
-          </Typography>
-        </AccordionDetails>
-      </Accordion>
- </div>
-        <div className="ball">
-            <img className="ms"
-             src= "https://d13ir53smqqeyp.cloudfront.net/d11-static-pages/static-content/images/bowling_points.png" alt= ""></img>
-        <Accordion>
-        <AccordionSummary
-          expandIcon={<ExpandMoreIcon />}
-          aria-controls="panel1a-content"
-          id="panel1a-header"
-        >
-          <Typography>Balliing Rules</Typography>
-        </AccordionSummary>
-        <AccordionDetails>
-          <Typography>
-          <h1>Bowling points</h1>
-              <ul>  
-                <li className="row"> <span>Wicket(Excluding Runout)</span>  <span className="box"> 25</span>  </li>
-                <li className="row"> <span>Bonnus(LBW/Bowled) </span> <span className="box"> +8</span>  </li>
-                <li className="row"> <span> 3 WicketBonus </span> <span className="box"> +4</span> </li>
-                <li className="row"> <span>4 WicketBonus</span> <span className="box">+8</span>  </li>
-                <li className="row"> <span>5 WicketBonus</span> <span className="box"> 16 </span>  </li>
-                <li className="row"> <span>Maiden Over</span> <span className="box">12</span>  </li>
-             </ul>
-          </Typography>
-        </AccordionDetails>
-      </Accordion>
+  const [open, setOpen] = useState(solutions[0].id);
+  const imgSrc = solutions.find((s) => s.id === open)?.imgSrc;
+  return (
+    <section className="px-8 py-12 bg-white mt-12">
+      <div className="w-full max-w-5xl mx-auto grid gap-8 grid-cols-1 lg:grid-cols-[1fr_350px]">
+        <div>
+          <h3 className="text-4xl font-bold mb-8">Rules </h3>
+          <div className="flex flex-col gap-4">
+            {solutions.map((q) => {
+              return (
+                <Solution {...q} key={q.id} open={open} setOpen={setOpen} index={q.id} />
+              );
+            })}
+          </div>
         </div>
-        <div className="field">
-            <img className="jr"
-            src="https://d13ir53smqqeyp.cloudfront.net/d11-static-pages/static-content/images/fielding_points.png" alt="Fielder"></img>
-        <Accordion>
-        <AccordionSummary
-          expandIcon={<ExpandMoreIcon />}
-          aria-controls="panel1a-content"
-          id="panel1a-header"
-        >
-          <Typography>Fieldiing Rules</Typography>
-        </AccordionSummary>
-        <AccordionDetails>
-          <Typography>
-          <h1>Fielding Points</h1>
-                <ul>
-                    <li className="row"> <span>Catch  </span> <span className="box"> +8</span>  </li>
-                    <li className="row"> <span>3 Catch Bonus</span> <span className="box">+4</span>  </li>
-                    <li className="row"> <span> Stumping</span> <span className="box">12</span>  </li>
-                    <li className="row"> <span>Run-Out(DirectHit)</span> <span className="box">16</span>  </li>
-                    <li className="row"><span>Run-Out(Not a DirectHit)</span> <span className="box">+6</span>  </li>
-                    <li className="row"> <span> Catch-miss </span>  <span className="box">-2</span>  </li>
-                </ul>
-          </Typography>
-        </AccordionDetails>
-      </Accordion> 
+        <AnimatePresence mode="wait">
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            key={imgSrc}
+            className="bg-slate-300 rounded-2xl aspect-[4/3] lg:aspect-auto"
+            style={{
+              backgroundImage: `url(${imgSrc})`,
+              backgroundPosition: "center",
+              backgroundSize: "cover",
+            }}
+          />
+        </AnimatePresence>
+      </div>
+    </section>
+  );
+};
+
+const Solution = ({ title, description, index, open, setOpen }) => {
+  const isOpen = index === open;
+
+  return (
+    <div
+      onClick={() => setOpen(index)}
+      className="p-0.5 rounded-lg relative overflow-hidden cursor-pointer"
+    >
+      <motion.div
+        initial={false}
+        animate={{
+          height: isOpen ? "240px" : "72px",
+        }}
+        className="p-6 rounded-[7px] bg-white flex flex-col justify-between relative z-20"
+      >
+        <div>
+          <motion.p
+            initial={false}
+            animate={{
+              color: isOpen ? "rgba(0, 0, 0, 0)" : "rgba(0, 0, 0, 1)",
+            }}
+            className="text-xl font-medium w-fit bg-gradient-to-r from-violet-600 to-indigo-600 bg-clip-text"
+          >
+            {title}
+          </motion.p>
+          <motion.p
+            initial={false}
+            animate={{
+              opacity: isOpen ? 1 : 0,
+            }}
+            className="mt-4 bg-gradient-to-r from-violet-600 to-indigo-600 bg-clip-text text-transparent"
+          >
+            {description}
+          </motion.p>
         </div>
+        <motion.button
+          initial={false}
+          animate={{
+            opacity: isOpen ? 1 : 0,
+          }}
+          className="-ml-6 -mr-6 -mb-6 mt-4 py-2 rounded-b-md flex items-center justify-center gap-1 group transition-[gap] bg-gradient-to-r from-violet-600 to-indigo-600 text-white"
+        >
+          <span>Learn more</span>
+          <FiArrowRight className="group-hover:translate-x-1 transition-transform" />
+        </motion.button>
+      </motion.div>
+      <motion.div
+        initial={false}
+        animate={{
+          opacity: isOpen ? 1 : 0,
+        }}
+        className="absolute inset-0 z-10 bg-gradient-to-r from-violet-600 to-indigo-600"
+      />
+      <div className="absolute inset-0 z-0 bg-slate-200" />
     </div>
-    );
-}
-export default CreateRecepie; 
+  );
+};
+
+
+
+const solutions = [
+  {
+    id: 1,
+    title: "Batting",
+    description:
+      <div>
+        <ul class="list-disc list-inside space-y-2">
+          <li class="flex justify-between items-center"><span class="font-bold">Run:</span> <span class=" px-3 py-1 rounded-full text-sm">+1</span></li>
+          <li class="flex justify-between items-center"><span class="font-bold">Boundary Bonus:</span> <span class=" px-3 py-1 rounded-full text-sm">+1</span></li>
+          <li class="flex justify-between items-center"><span class="font-bold">Six Bonus:</span> <span class=" px-3 py-1 rounded-full text-sm">+2</span></li>
+          <li class="flex justify-between items-center"><span class="font-bold">Half-Century Bonus:</span> <span class=" px-3 py-1 rounded-full text-sm">+8</span></li>
+          <li class="flex justify-between items-center"><span class="font-bold">Century Bonus:</span> <span class=" px-3 py-1 rounded-full text-sm">+16</span></li>
+          <li class="flex justify-between items-center"><span class="font-bold">Dismissal for a Duck:</span> <span class="bg-red-200 px-3 py-1 rounded-full text-sm">-2</span></li>
+        </ul>
+      </div>
+    ,
+    imgSrc:
+      "https://i.pinimg.com/736x/45/d2/83/45d283e9af112aa4065c417336649ab2.jpg",
+  },
+  {
+    id: 2,
+    title: "Balling",
+    description:
+      <ul className="list-disc list-inside space-y-2">
+        <li className="flex justify-between">
+          <span className="font-bold">Wicket (Excluding Runout):</span>
+          <span className=" px-2 py-1 rounded">+25</span>
+        </li>
+        <li className="flex justify-between">
+          <span className="font-bold">Bonus (LBW/Bowled):</span>
+          <span className=" px-2 py-1 rounded">+8</span>
+        </li>
+        <li className="flex justify-between">
+          <span className="font-bold">5 Wicket Bonus:</span>
+          <span className=" px-2 py-1 rounded">+16</span>
+        </li>
+        <li className="flex justify-between">
+          <span className="font-bold">Maiden Over:</span>
+          <span className=" px-2 py-1 rounded">+12</span>
+        </li>
+      </ul>,
+    imgSrc:
+      "https://i.pinimg.com/564x/ad/29/56/ad2956bedac284ce74c837f8e4a54fb9.jpg",
+  },
+  {
+    id: 3,
+    title: "Fielding",
+    description:
+      <ul className="list-disc list-inside space-y-2">
+        <li className="flex justify-between">
+          <span className="font-bold">Catch:</span>
+          <span className=" px-2 py-1 rounded">+8</span>
+        </li>
+        <li className="flex justify-between">
+          <span className="font-bold">Stumping:</span>
+          <span className=" px-2 py-1 rounded">+12</span>
+        </li>
+        <li className="flex justify-between">
+          <span className="font-bold">Run-Out (Direct Hit):</span>
+          <span className=" px-2 py-1 rounded">+16</span>
+        </li>
+
+        <li className="flex justify-between">
+          <span className="font-bold">Catch Miss:</span>
+          <span className=" px-2 py-1 rounded text-red-500">-2</span>
+        </li>
+      </ul>,
+    imgSrc:
+      "https://i.pinimg.com/564x/da/12/9f/da129f0a3033d7bf7bdb8dd8aa830458.jpg",
+  },
+];
