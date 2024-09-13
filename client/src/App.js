@@ -21,7 +21,7 @@ function App() {
         <div className="App">
           <Routes>
             <Route path="/" element={<Auth />} />
-            <Route path="/home" element={<Home />} />
+            <Route path="/home" element={<Matches/>} />
             <Route path="/rules" element={<CreateRecepie />} />
             <Route path="/savedrecepie" element={<SaveRecepie />} />
             <Route path="/contest" element={<ContestPage />} />
