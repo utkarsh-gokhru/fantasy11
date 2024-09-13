@@ -66,39 +66,28 @@ const MyTeam = () => {
   };
 
   useEffect(() => {
-    const http = require('https');
-    const options = {
-      method: 'GET',
-      hostname: 'cricbuzz-cricket.p.rapidapi.com',
-      port: null,
-      path: `/mcenter/v1/${matchId}/scard`,
-      headers: {
-        'X-RapidAPI-Key': '33692e1a65mshb5409f761d142bfp1fbc64jsn057b114ebff9',
-        'X-RapidAPI-Host': 'cricbuzz-cricket.p.rapidapi.com'
-      }
-    };
-
-    const req = http.request(options, function (res) {
-      const chunks = [];
-
-      res.on('data', function (chunk) {
-        chunks.push(chunk);
-      });
-
-      res.on('end', function () {
-        const body = Buffer.concat(chunks);
-        const jsondata = JSON.parse(body.toString());
+    const fetchMatchData = async () => {
+      try {
+        const response = await axios.get(`https://cricbuzz-cricket.p.rapidapi.com/mcenter/v1/${matchId}/scard`, {
+          headers: {
+            'x-rapidapi-key': '33692e1a65mshb5409f761d142bfp1fbc64jsn057b114ebff9',
+            'x-rapidapi-host': 'cricbuzz-cricket.p.rapidapi.com'
+          }
+        });
+  
+        const jsondata = response.data;
         setIsMatchComplete(jsondata.isMatchComplete);
-
+  
         const match_header = jsondata.matchHeader;
         const matchState = match_header.state;
         setMatchState(matchState);
-      });
-    });
-
-    req.end();
+      } catch (error) {
+        console.error('Error fetching match data:', error);
+      }
+    };
+  
+    fetchMatchData();
   }, [matchId]);
-
   const handleTabClick = (tab) => {
     setActiveTab(tab);
   };
