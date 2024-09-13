@@ -13,7 +13,7 @@ const MyMatches = () => {
 
   const handleGetTeamData = () => {
     axios
-      .get(`http://localhost:3001/team_page/teams?username=${username}`)
+      .get(`https://fantasy11-umil.onrender.com/team_page/teams?username=${username}`)
       .then((response) => {
         setTeamData(response.data);
       })

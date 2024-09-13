@@ -20,7 +20,7 @@ export const Auth = () => {
   const handleLogin = async (event) => {
     event.preventDefault();
     try {
-      const response = await axios.post("http://localhost:3001/auth/login", { username, password });
+      const response = await axios.post("https://fantasy11-umil.onrender.com/auth/login", { username, password });
       console.log(response); // Check the response
       if (response.data.token) {
         localStorage.setItem("username", username);
@@ -36,7 +36,7 @@ export const Auth = () => {
   const handleRegister = async (event) => {
     event.preventDefault();
     try {
-      await axios.post("http://localhost:3001/auth/register", { username, password });
+      await axios.post("https://fantasy11-umil.onrender.com/auth/register", { username, password });
       setUsername("");
       setPassword("");
       alert("Registration complete! Now login.");

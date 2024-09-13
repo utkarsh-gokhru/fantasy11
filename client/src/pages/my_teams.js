@@ -55,7 +55,7 @@ const MyTeam = () => {
     };
 
     axios
-      .get('http://localhost:3001/my_teams/leaderboard', { params: { matchData: matchData } })
+      .get('https://fantasy11-umil.onrender.com/my_teams/leaderboard', { params: { matchData: matchData } })
       .then((response) => {
         setLeaderboardData(response.data.sortedUserPoints);
         setPlayerLeaderboardData(response.data.finalPlayersWithPoints)
