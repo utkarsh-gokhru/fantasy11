@@ -8,6 +8,7 @@ background-color: #f7f7f7;
 box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
 cursor: pointer;
 transition: transform 0.2s; 
+margin-top: px;
 }
 
 .player-card h2 {
@@ -17,6 +18,7 @@ font-weight: bold;
 }
 
 .team-page {
+margin-top: 96px;
 display: flex;
 justify-content: space-between;
 flex-wrap: wrap;

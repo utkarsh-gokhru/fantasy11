@@ -1,9 +1,11 @@
 .contest-card {
+
     border: 1px solid #ccc;
     border-radius: 5px;
     padding: 10px;
     margin: 10px;
-    width: 300px;
+    width: 245px;
+    
     display: inline-block;
   }
   
@@ -28,4 +30,18 @@
   .contest-card button:hover {
     background-color: #0056b3;
   }
+@media (min-width: 769px) and (max-width: 1200px) {
+  .contest-card{
+    height: 260px;
+    width: 240px;
+ 
   
+  }
+  }
+  @media (min-width: 500px) and (max-width: 768px) {
+    .contest-card{
+      height: 260px;
+      width: 220px;
+      margin-left: 10%;
+    }
+    }
