@@ -28,91 +28,138 @@ const PlayerCard = ({ player, isSelected, onSelect, onDeselect }) => {
   );
 };
 
-const PlayerSelection = ({matchId,username,contestId,team1Name,team2Name, isEditing, setIsEditing}) => {
-    const navigate = useNavigate();
+const PlayerSelection = ({ matchId, username, contestId, team1Name, team2Name, isEditing, setIsEditing }) => {
+  const [team1Data, setTeam1Data] = useState({});
+  const [team2Data, setTeam2Data] = useState({});
+  const navigate = useNavigate();
 
-    const match_data = require('../matches_data.json');
+  const getTeamIdsByMatchId = async (matchId, retryCount = 0) => {
+    const options = {
+      method: 'GET',
+      url: `https://cricbuzz-cricket.p.rapidapi.com/mcenter/v1/${matchId}`,
+      headers: {
+        'x-rapidapi-key': '33692e1a65mshb5409f761d142bfp1fbc64jsn057b114ebff9',
+        'x-rapidapi-host': 'cricbuzz-cricket.p.rapidapi.com'
+      }
+    };
 
-    function getTeamIdsByMatchId(matchId) {
-        const match = match_data.find((match) => match.matchId === matchId);
-        if (match) {
-          const { team1Id, team2Id } = match;
-          return { team1Id, team2Id };
-        } else {
-          return null; 
-        }
+    try {
+      const response = await axios.request(options);
+      const match = response.data;
+
+      if (match) {
+        const team1Id = match.matchInfo.team1.id;
+        const team2Id = match.matchInfo.team2.id;
+        return { team1Id, team2Id };
+      } else {
+        return null;
+      }
+    } catch (error) {
+      if (error.response && error.response.status === 429 && retryCount < 3) {
+        console.error('Rate limit exceeded, retrying in 5 seconds...');
+        await new Promise(resolve => setTimeout(resolve, 5000));
+        return getTeamIdsByMatchId(matchId, retryCount + 1);
+      } else {
+        console.error('Error fetching match data:', error);
+        return null;
+      }
     }
+  };
 
-    const teamIds = getTeamIdsByMatchId(matchId);
-
-    const team1Id = teamIds.team1Id;
-    const team2Id = teamIds.team2Id;
-
-    const team1Data = require(`../team_${team1Id}.json`);
-    const team2Data = require(`../team_${team2Id}.json`);
-
-    const players1 = team1Data.player;
-    const players2 = team2Data.player;
-
-    const [selectedPlayers, setSelectedPlayers] = useState([]);
-    const [captain, setCaptain] = useState("");
-    const [viceCaptain, setViceCaptain] = useState("");
-
-    const handleSelect = (playerId, playerName) => {
-        if (selectedPlayers.length < 11) {
-        if (!selectedPlayers.find((player) => player.id === playerId)) {
-            setSelectedPlayers([...selectedPlayers, { id: playerId, name: playerName }]);
-        }
-        } else {
-        alert('You have already selected 11 players. You cannot select more.');
-        }
+  const fetchTeam = async (teamId, setTeamData) => {
+    const options = {
+      method: 'GET',
+      url: `https://cricbuzz-cricket.p.rapidapi.com/mcenter/v1/${matchId}/team/${teamId}`,
+      headers: {
+        'x-rapidapi-key': '33692e1a65mshb5409f761d142bfp1fbc64jsn057b114ebff9',
+        'x-rapidapi-host': 'cricbuzz-cricket.p.rapidapi.com'
+      }
     };
 
-    const handleDeselect = (playerId) => {
-        const updatedPlayers = selectedPlayers.filter((player) => player.id !== playerId);
-        setSelectedPlayers(updatedPlayers);
-        if (captain === playerId) {
-        setCaptain(null);
-        }
-        if (viceCaptain === playerId) {
-        setViceCaptain(null);
-        }
+    try {
+      const response = await axios.request(options);
+      setTeamData(response.data);
+    } catch (error) {
+      console.error(error);
+    }
+  };
+
+  useEffect(() => {
+    const fetchAllTeams = async () => {
+      const teamIds = await getTeamIdsByMatchId(matchId);
+      if (teamIds) {
+        await Promise.all([
+          fetchTeam(teamIds.team1Id, setTeam1Data),
+          fetchTeam(teamIds.team2Id, setTeam2Data)
+        ]);
+      }
     };
 
-    useEffect(() => {
-        if (captain && viceCaptain && captain === viceCaptain) {
-        setViceCaptain("");
-        alert("Captain and vice-captain cannot be the same!");
-        }
-    }, [captain, viceCaptain]);
+    fetchAllTeams();
+  }, [matchId]);
 
-    const handleConfirm = () => {
-        const dataToUpdate = {
-          username: username,
-          matchId: matchId,
-          contestId: contestId,
-          captain: captain,
-          viceCaptain: viceCaptain,
-          players: selectedPlayers, 
-        };
-      
-        axios.post('https://fantasy11-umil.onrender.com/team_page/update', dataToUpdate)
-          .then((response) => {
-            setIsEditing(false);
-            alert('Players data updated successfully!');
-            navigate('/mymatches');
-          })
-          .catch((error) => {
-            console.error('Error updating players data: ', error);
-            alert('Failed to update players data. Please try again later.');
-          });
-        };
+  const players1 = team1Data.players ? team1Data.players.Squad : [];
+  const players2 = team2Data.players ? team2Data.players.Squad : [];
+
+  const [selectedPlayers, setSelectedPlayers] = useState([]);
+  const [captain, setCaptain] = useState("");
+  const [viceCaptain, setViceCaptain] = useState("");
+
+  const handleSelect = (playerId, playerName) => {
+    if (selectedPlayers.length < 11) {
+      if (!selectedPlayers.find((player) => player.id === playerId)) {
+        setSelectedPlayers([...selectedPlayers, { id: playerId, name: playerName }]);
+      }
+    } else {
+      alert('You have already selected 11 players. You cannot select more.');
+    }
+  };
+
+  const handleDeselect = (playerId) => {
+    const updatedPlayers = selectedPlayers.filter((player) => player.id !== playerId);
+    setSelectedPlayers(updatedPlayers);
+    if (captain === playerId) {
+      setCaptain(null);
+    }
+    if (viceCaptain === playerId) {
+      setViceCaptain(null);
+    }
+  };
+
+  useEffect(() => {
+    if (captain && viceCaptain && captain === viceCaptain) {
+      setViceCaptain("");
+      alert("Captain and vice-captain cannot be the same!");
+    }
+  }, [captain, viceCaptain]);
+
+  const handleConfirm = () => {
+    const dataToUpdate = {
+      username: username,
+      matchId: matchId,
+      contestId: contestId,
+      captain: captain,
+      viceCaptain: viceCaptain,
+      players: selectedPlayers,
+    };
+
+    axios.post('https://fantasy11-umil.onrender.com/team_page/update', dataToUpdate)
+      .then((response) => {
+        setIsEditing(false);
+        alert('Players data updated successfully!');
+        navigate('/mymatches');
+      })
+      .catch((error) => {
+        console.error('Error updating players data: ', error);
+        alert('Failed to update players data. Please try again later.');
+      });
+  };
 
   return (
     <div className='team_page'>
       <div className="team-page">
         <div className="team">
-          <h3>Team {team1Name}</h3>
+          <h3><strong>{team1Name}</strong></h3>
           <div className="player-cards">
             {players1.map((player) => (
               <PlayerCard
@@ -129,7 +176,7 @@ const PlayerSelection = ({matchId,username,contestId,team1Name,team2Name, isEdit
         </div>
 
         <div className="team">
-          <h3>Team {team2Name}</h3>
+          <h3><strong>{team2Name}</strong></h3>
           <div className="player-cards">
             {players2.map((player) => (
               <PlayerCard
@@ -156,7 +203,7 @@ const PlayerSelection = ({matchId,username,contestId,team1Name,team2Name, isEdit
           >
             <option value=''>Select Captain</option>
             {selectedPlayers.map((player) => (
-              <option key={player.id} value={player.name}>{player.name}</option>
+              <option key={player.id} value={player.id}>{player.name}</option>
             ))}
           </select>
         </div>
@@ -171,7 +218,7 @@ const PlayerSelection = ({matchId,username,contestId,team1Name,team2Name, isEdit
             {selectedPlayers
               .filter((player) => player.id !== captain)
               .map((player) => (
-                <option key={player.id} value={player.name}>{player.name}</option>
+                <option key={player.id} value={player.id}>{player.name}</option>
               ))}
           </select>
         </div>

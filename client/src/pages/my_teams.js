@@ -17,8 +17,8 @@ const MyTeam = () => {
   const [isEditing, setIsEditing] = useState(false);
   const [isMatchComplete, setIsMatchComplete] = useState(false);
   const [matchState, setMatchState] = useState('');
-  const [captain,setCaptain] = useState('');
-  const [viceCaptain,setViceCaptain] = useState('');
+  const [captain, setCaptain] = useState('');
+  const [viceCaptain, setViceCaptain] = useState('');
 
   useEffect(() => {
     if (selectedTeam) {
@@ -38,11 +38,11 @@ const MyTeam = () => {
       if (viceCaptainPlayer) {
         setViceCaptain(viceCaptainPlayer.name);
       } else {
-        setViceCaptain(''); 
+        setViceCaptain('');
       }
     }
   }, [selectedTeam]); // Dependency array ensures effect runs when selectedTeam changes
-  
+
 
   const handleEditClick = () => {
     setIsEditing(true);
@@ -74,10 +74,10 @@ const MyTeam = () => {
             'x-rapidapi-host': 'cricbuzz-cricket.p.rapidapi.com'
           }
         });
-  
+
         const jsondata = response.data;
         setIsMatchComplete(jsondata.isMatchComplete);
-  
+
         const match_header = jsondata.matchHeader;
         const matchState = match_header.state;
         setMatchState(matchState);
@@ -85,7 +85,7 @@ const MyTeam = () => {
         console.error('Error fetching match data:', error);
       }
     };
-  
+
     fetchMatchData();
   }, [matchId]);
   const handleTabClick = (tab) => {

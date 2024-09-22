@@ -25,4 +25,4 @@ app.use("/auth", userRouter);
 app.use("/team_page", team_router);
 app.use("/my_teams", LeaderboardRouter);
 
-app.listen(3001, () => console.log("SERVER STARTED!"));
+app.listen(5000, () => console.log("SERVER STARTED!"));
